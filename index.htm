@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+<head>
+	<title>Resume</title>
+	<meta charset= "UTF-8" />
+	<meta name= "viewport" content= "width=device-width, initial-scale=1" />
+	<meta name= "description" content= "resume">
+	<meta name= "author" content= "Ico Pavlov">
+</head>
+
+<body>
+
+<header>
+	<h1 class= "subject">Resume</h1>
+	<section class= "person"></section>
+	<nav class= "main-nav"></nav>
+</header>
+<main>
+	<section class= "home section"></section>
+	<section class= "education section"></section>
+	<section class= "work-experience section"></section>
+	<section class= "skills section"></section>
+</main>
+<footer>
+	<section class= "contact"></section>
+</footer>
+
+<!-- jQuery -->
+<script src= "js/jquery-3.2.0.min.js" type= "text/javascript"></script>
+<!-- Handlebars -->
+<script src= "js/handlebars/handlebars-v4.0.12.js"></script>
+<script src= "js/handlebars/handlebars-template-loading.js" type= "text/javascript"></script>
+<script src= "js/handlebars/context.json" type= "text/javascript"></script>
+
+<!-- 
+-----------------------------------------------------------------------------
+	Handlebars Templates 
+------------------------------------------------------------------------------ 
+-->
+
+<script id= "person-template" type= "text/x-handlebars-template">
+	<dl class= "name key-value-pair">
+		<dt class= "key">{{labels.name}}</dt><dd class= "value">{{name}}</dd>
+	</dl>
+	
+	<dl class= "position key-value-pair">
+		<dt class= "key">{{labels.position}}</dt><dd class= "value">{{position}}</dd>
+	</dl>
+	
+	<dl class= "photo key-value-pair">
+		<dt class= "key">{{labels.photo}}</dt><dd class= "value"><span src= "{{photo.src}}"></span></dd>
+	</dl>
+</script>
+
+
+<script id= "nav-template" type= "text/x-handlebars-template">
+	<h6>{{title}}</h6>
+	
+	<ul class= "nav-links">
+		{{#each links}}
+			<li><a class= "link {{className}}" href= "#" data-target-selector= "{{targetSelector}}">{{text}}</a></li>
+		{{/each}}
+	</ul>
+</script>
+
+
+<script id= "home-template" type= "text/x-handlebars-template">
+	<article class= "overview">
+		<h2 class= "section-title">{{title}}</h2>
+		<p class= "text">{{text}}</p>
+	</article>
+</script>
+
+
+<script id= "education-template" type= "text/x-handlebars-template">
+	<article class= "overview">
+		<h2 class= "section-title">{{title}}</h2>
+		<p class= "text">{{text}}</p>
+	</article>
+	
+	<ul class= "timeline entry-list">
+		{{#each entries}}
+			<li class= "entry">
+				<section>
+					<dl class= "major secondary key-value-pair">
+						<dt class= "key">{{../labels.major}}</dt><dd class= "value">{{major}}</dd>
+					</dl>
+					
+					<dl class= "facility primary key-value-pair">
+						<dt class= "key">{{../labels.educationalFacility}}</dt><dd class= "value">{{educationalFacility}}</dd>
+					</dl>
+					
+					<dl class= "year key-value-pair">
+						<dt class= "key">{{../labels.year}}</dt><dd class= "value">{{year}}</dd>
+					</dl>
+				</section>
+				
+				<p class= "description-text">{{description}}</p>
+			</li>
+		{{/each}}
+	</ul>
+	
+	<!-- <ul class= "timeline">
+		{{#each education}}
+			<li>
+				<section class= "entry">
+					{{#each this}}
+						<article class= "">
+							<dl class= "key-value-pair">
+								<dt class= "key">{{@key}}</dt><dd class= "value">{{@value}}</dd>
+							</dl>
+						</article>
+					{{/each}}
+				</section>
+				
+				<p class= "description-text">{{description}}</p>
+			</li>
+		{{/each}}
+	</ul> -->
+</script>
+
+
+<script id= "work-experience-template" type= "text/x-handlebars-template">
+	<article class= "overview">
+		<h2 class= "section-title">{{title}}</h2>
+		<p class= "text">{{text}}</p>
+	</article>
+	
+	<ul class= "timeline entry-list">
+		{{#each entries}}
+			<li class= "entry">
+				<section>
+					<dl class= "position secondary key-value-pair">
+						<dt class= "key">{{../labels.position}}</dt><dd class= "value">{{position}}</dd>
+					</dl>
+					
+					<dl class= "employer-organization primary key-value-pair">
+						<dt class= "key">{{../labels.employerOrganization}}</dt><dd class= "value">{{employerOrganization}}</dd>
+					</dl>
+					
+					<dl class= "year key-value-pair">
+						<dt class= "key">{{../labels.year}}</dt><dd class= "value">{{year}}</dd>
+					</dl>
+				</section>
+				
+				<p class= "description-text">{{description}}</p>
+			</li>
+		{{/each}}
+	</ul>
+</script>
+
+
+<script id= "skills-template" type= "text/x-handlebars-template">
+	<article class= "overview">
+		<h2 class= "section-title">{{title}}</h2>
+		<p class= "text">{{text}}</p>
+	</article>
+	
+	<ul class= "set  entry-list">
+		{{#each entries}}
+			<li class= "entry">
+				<section>
+					<article class= "skill-level">
+						<dl class= "word-representation secondary key-value-pair">
+							<dt class= "key">{{../labels.level.wordRepresentation}}</dt><dd class= "value">{{level.wordRepresentation}}</dd>
+						</dl>
+						
+						<dl class= "graphic-representation key-value-pair">
+							<dt class= "key">{{../labels.level.graphicRepresentation}}</dt><dd class= "value">{{level.graphicRepresentation}}</dd>
+						</dl>
+					</article>
+					
+					<article class= "skill">
+						<dl class= "primary key-value-pair">
+							<dt class= "key">{{../labels.skill}}</dt><dd class= "value">{{skill}}</dd>
+						</dl>
+					</article>
+				</section>
+				
+				<p class= "description-text">{{description}}</p>
+			</li>
+		{{/each}}
+	</ul>
+</script>
+
+
+<script id= "contact-template" type= "text/x-handlebars-template">
+	<h2 class= "section-title">{{title}}</h2>
+	{{#each entries}}
+		<dl class= "{{className}} key-value-pair">
+			<dt class= "key">{{label}}</dt><dd class= "value">{{value}}</dd>
+		</dl>
+	{{/each}}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
