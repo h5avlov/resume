@@ -7,6 +7,8 @@
 	<meta name= "viewport" content= "width=device-width, initial-scale=1" />
 	<meta name= "description" content= "resume">
 	<meta name= "author" content= "Ico Pavlov">
+	
+	<link href= "css/style.css" type= "text/css" rel= "stylesheet" />
 </head>
 
 <body>
@@ -49,7 +51,7 @@
 	</dl>
 	
 	<dl class= "photo key-value-pair">
-		<dt class= "key">{{labels.photo}}</dt><dd class= "value"><span src= "{{photo.src}}"></span></dd>
+		<dt class= "key">{{labels.photo}}</dt><dd class= "value"><img src= "images/{{photo.src}}" /></dd>
 	</dl>
 </script>
 
@@ -193,6 +195,13 @@
 		</dl>
 	{{/each}}
 </script>
+
+
+<link href="plugins/slick-1.6.0/slick/slick.css" rel="stylesheet">
+<script src= "plugins/slick-1.6.0/slick/slick.min.js" type= "text/javascript"></script>
+
+<script src= "js/project.js" type= "text/javascript"></script>
+
 
 </body>
 </html>
