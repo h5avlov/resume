@@ -1,0 +1,208 @@
+const person = {
+	labels: {
+		name: "Name", 
+		position: "Position", 
+		photo: "Photo"
+	}, 
+
+	name: "Ico Pavlov", 
+	position: "Web Designer + Developer", 
+	photo: {
+		src: ""
+	}
+
+};
+
+
+const mainNavigation = {
+	title: "Where Do You Wanna Go?", 
+	
+	links: [
+		{
+			text: "Home", 
+			targetSelector: ".home", 
+			className: "home-link"
+		}, 
+		
+		{
+			text: "Education", 
+			targetSelector: ".education", 
+			className: "education-link"
+		}, 
+		
+		{
+			text: "Work Experience", 
+			targetSelector: ".work-experience", 
+			className: "work-experience-link"
+		}, 
+		
+		{
+			text: "Skills", 
+			targetSelector: ".skills", 
+			className: "skills-link"
+		}
+	]
+};
+
+
+const home = {
+	title: "Summary", 
+	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+};
+
+
+
+const education = {
+	title: "Education", 
+	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	
+	labels: {
+		major: "Major", 
+		educationalFacility: "Educational Facility",
+		year: "Year"
+	}, 
+	
+	entries: [
+		{
+			major: "Master of Arts", 
+			educationalFacility: "Harvard University", 
+			year: "2008",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}, 
+		
+		{
+			major: "Bachelor of Arts", 
+			educationalFacility: "Oxford University", 
+			year: "2006",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}
+		
+	]
+
+};
+
+const workExperience = {
+	title: "Work Experience", 
+	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	
+	labels: {
+		position: "Job Position", 
+		employerOrganization: "Employer Organization",
+		year: "Year"
+	}, 
+	
+	entries: [
+		{
+			position: "Front End Engineer", 
+			employerOrganization: "Ubisoft", 
+			year: "2012",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}, 
+		
+		{
+			position: "Junior Front End Engineer", 
+			employerOrganization: "Ubisoft", 
+			year: "2010",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}
+	]
+
+};
+
+const skills = {
+	title: "Skills", 
+	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	
+	labels: {
+		skill: "Skill", 
+		level: {
+			wordRepresentation: "Word Representation", 
+			graphicRepresentation: "Graphic Representation"
+		}
+	},
+	
+	entries: [
+		{
+			skill: "HTML", 
+			
+			level: {
+				wordRepresentation: "Advanced", 
+				graphicRepresentation: "90%"
+			}, 
+			
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		
+		}, 
+		
+		{
+			skill: "CSS", 
+			
+			level: {
+				wordRepresentation: "Advanced", 
+				graphicRepresentation: "90%"
+			}, 
+			
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		
+		}, 
+		
+		{
+			skill: "JS", 
+			
+			level: {
+				wordRepresentation: "Advanced", 
+				graphicRepresentation: "90%"
+			}, 
+			
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		
+		}
+	]
+
+};
+
+const contact = {
+	title: "Contact Me", 
+	
+	entries: [
+		{
+			label: "Phone", 
+			value: "0888 123 456", 
+			className: "phone"
+		}, 
+		
+		{
+			label: "Email", 
+			value: "johndoe@gmail.com", 
+			className: "email"
+		}, 
+		
+		{
+			label: "Website", 
+			value: "johndoe.com", 
+			className: "website"
+		}
+	]
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
