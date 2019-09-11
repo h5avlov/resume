@@ -1,0 +1,92 @@
+
+.subject, h6, dt, .contact .section-title {
+	display: none; 
+}
+
+.overview, .entry-list, header .key-value-pair, .main-nav, footer {
+	box-sizing: border-box; 
+	max-width: 960px; 
+	margin-left: auto; margin-right: auto; 
+	padding-right: 15rem; 
+}
+
+header {
+	margin-bottom: var( --header-margin-bottom );
+}
+
+.main-nav {
+	margin-bottom: 1.25rem;
+}
+
+/* .overview, .entry {
+	margin-left: var( --entry-margin-left );
+} */
+
+.overview {
+	margin-bottom: 1.25rem; 
+}
+
+.entry {
+	padding-left: var( --entry-padding-left );
+	margin-bottom: var( --entry-margin-bottom ); 
+	position: relative; 
+}
+
+.entry:last-of-type {
+	margin-bottom: 0; 
+	
+}
+
+.entry-list {
+	padding-top: var( --overview-padding ); padding-bottom: var( --overview-padding ); 
+	position: relative;
+}
+
+.entry-list:after {
+	display: block;
+	width: 1px; height: 100%;
+	position: absolute; left: 0; top: 0; 
+	background-color: var( --text-color );
+	content: "";
+	
+}
+
+.primary {
+	margin-bottom: var( --primary-text--margin-bottom );
+	
+}
+
+.secondary {
+	margin-bottom: var( --secondary-text-margin-bottom );
+}
+
+.year, .skill-level .graphic-representation {
+	position: absolute; right: 100%; margin-right: var( --year-margin-right ); top: 0; 
+}
+
+main {
+	margin-bottom: var( --content-margin-bottom );
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
