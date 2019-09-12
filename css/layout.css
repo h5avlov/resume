@@ -69,6 +69,10 @@ main {
 	
 }
 
+:link, :visited, :active, :focus {
+	outline: 0; 
+}
+
 
 
 
