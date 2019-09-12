@@ -6,26 +6,31 @@ header {
 	padding-top: var( --header-padding ); // padding-bottom: var( --header-padding );
 	background-color: var( --background-color ); background-clip: padding-box; 
 	border-bottom-width: var( --header-border-width ); border-bottom-style: solid; border-bottom-color: transparent;  
+	color: var( --over-background-text-color );
 }
 
 .name {
 	margin-bottom: var( --name-margin-bottom );
+	font-size: var( --name-font-size );
 }
 
 header .position {
 	margin-bottom: var( --position-margin-bottom );
+	font-size: var( --position-font-size );
 }
 
-.main-nav {
-//	display: none; 
-}
+/* header .position .value {
+	display: inline-block; 
+	padding-top: 0.4rem; 
+	border-top: 1px solid; 
+} */
 
 .photo .value {
 	display: block; 
 	width: var( --photo-size );
 	height: var( --photo-size );
 	margin-bottom: calc( -1 * var( --header-border-width ) );
-	background-image: url( "../images/abc2fdc6dfea08a7bff4359e48255a96.jpg" ); background-size: cover; 
+	background-size: cover; 
 	border-radius: 50%; 
 	box-shadow: 0 0 var( --photo-box-shadow-size ) var( --photo-box-shadow-color );
 }
