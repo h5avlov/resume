@@ -69,8 +69,8 @@ main {
 	
 }
 
-a:link, a:visited, a:active, a:focus {
-	outline: 0; 
+a:link, a:visited, a:active, *:focus {
+	outline: none; 
 }
 
 
