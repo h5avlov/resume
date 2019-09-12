@@ -50,8 +50,8 @@
 		<dt class= "key">{{labels.position}}</dt><dd class= "value">{{position}}</dd>
 	</dl>
 	
-	<dl class= "photo key-value-pair">
-		<dt class= "key">{{labels.photo}}</dt><dd class= "value"><img src= "images/{{photo.src}}" /></dd>
+	<dl class= "photo key-value-pair"">
+		<dt class= "key">{{labels.photo}}</dt><dd class= "value"  style= "background-image: url( images/{{photo.src}} )"><img src= "images/{{photo.src}}" /></dd>
 	</dl>
 </script>
 
@@ -72,6 +72,10 @@
 		<h2 class= "section-title">{{title}}</h2>
 		<p class= "text">{{text}}</p>
 	</article>
+	
+	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
+		<img src= "images/{{image.src}}" />
+	</figure>
 </script>
 
 
@@ -80,6 +84,10 @@
 		<h2 class= "section-title">{{title}}</h2>
 		<p class= "text">{{text}}</p>
 	</article>
+	
+	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
+		<img src= "images/{{image.src}}" />
+	</figure>
 	
 	<ul class= "timeline entry-list">
 		{{#each entries}}
@@ -129,6 +137,10 @@
 		<p class= "text">{{text}}</p>
 	</article>
 	
+	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
+		<img src= "images/{{image.src}}" />
+	</figure>
+	
 	<ul class= "timeline entry-list">
 		{{#each entries}}
 			<li class= "entry">
@@ -158,6 +170,10 @@
 		<h2 class= "section-title">{{title}}</h2>
 		<p class= "text">{{text}}</p>
 	</article>
+	
+	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
+		<img src= "images/{{image.src}}" />
+	</figure>
 	
 	<ul class= "set  entry-list">
 		{{#each entries}}
