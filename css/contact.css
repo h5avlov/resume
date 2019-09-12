@@ -16,32 +16,35 @@
 .contact .key {
 	display: block; 
 	margin-bottom: var( --contact-key-margin-bottom );
+	font-size: var( --contact-key-font-size );
 }
 
 .contact .key:before {
 	display: block; 
-	width: var( --contact-icon-size ); height: var( --contact-icon-size );
+	/* width: var( --contact-icon-size ); height: var( --contact-icon-size ); */
 	margin-bottom: var( --contact-icon-margin-bottom );
 	font-family: Ionicons;
-	font-size: 1.25rem; 
+	font-size: var( --contact-icon-font-size ); 
 }
 
 .contact .phone .key:before {
 //	content: "\f2d2"; 
+//	content: "\f3a2";
+//	content: "\f4b9"; 
 	content: "\f3a2";
-	content: "\f4b9"; 
 }
 
 .contact .email .key:before {
 //	font-size: 1.4rem; 
-//	content: "\f422"; 
-	content: "\f132";
+	content: "\f422"; 
+//	content: "\f132";
 //	content: "\f473"; 
 }
 
 .contact .website .key:before {
 	content: "\f38c";
-	content: "\f4d3"; 
+//	content: "\f4d2";
+//	content: "\f4d3"; 
 }
 
 
