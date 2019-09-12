@@ -5,21 +5,32 @@
 }
 
 @font-face {
+	font-family: "Kalinga";
+	src: url( "../fonts/kalinga.ttf" );
+}
+
+@font-face {
 	font-family: "Ionicons";
 	src: url( "../fonts/ionicons.ttf" );
 }
 
 body {
-	font-size: var( --font-size );
-	line-height: var( --line-height );
+	font-family: var( --main-font-family );
+	font-size: var( --main-font-size );
+	color: var( --text-color );
 }
 
-.person .name {
-	font-size: 1.2rem;
+.text, .description-text {
+	line-height: var( --body-text-line-height );
 }
 
-.person .position {
-	font-size: 0.8rem;
+.header, .contact {
+	color: var( --over-background-text-color ); 
+}
+
+header, .section-title {
+	font-family: var( --highlight-font-family );	
+	
 }
 
 .section-title {
@@ -27,7 +38,7 @@ body {
 }
 
 .primary, .secondary, .year, .skill-level {
-//	font-family: "Arial Black";
+	font-family: var( --highlight-font-family );
 }
 
 .primary {
@@ -39,7 +50,7 @@ body {
 }
 
 .year {
-	
+//	font-weight: bold; 
 }
 
 
