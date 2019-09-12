@@ -3,45 +3,63 @@
  */
 
 :root {
-	/* Global Text Settings */
-	--font-family: Arial;
-	--font-size: 18px;
-	--line-height: 1; 
-	--text-color: rgba( 0, 0, 0, 1 );
-	--background-color: rgba( 255, 0, 0, 1 );
+	/* Global Settings */
+	--content-area-width: 1280px; 
+	--content-separator-width: 1px; 
+	--field-left-width: 7.5rem;
+	--field-right-width: 35%; 
+	--background-image-size: 75%;
+	
+	--main-font-family: Arial;
+	--main-font-size: 16px;
+	--body-text-line-height: 1.4; 
+	--text-color: #ff9900;
+	--background-color: #003333; 
+	--highlight-font-family: Kalinga; 
 	
 	
 	/* General Section Settings */
 	--overview-padding: 2rem;
-	
+	--overview-margin-bottom: 3.5rem; 
+	--section-min-height: 45rem; 
 	--section-title-font-size: 2rem;
 	
 	
 	/* Entry Settings */
-	--entry-margin-bottom: 1.75rem; 
+	--entry-margin-bottom: 4rem; 
 	--entry-margin-left: 8rem; 
-	--entry-padding-left: 4rem; 
+	--entry-padding-left: 2rem; 
 	--entry-separator-width: 1px;
-	--year-margin-right: 2.5rem; 
+	--year-margin-right: 1.85rem; 
 	
 	--primary-text-margin-bottom: 0.05rem;
 	--secondary-text-margin-bottom: 0.75rem;
 	--primary-text-font-size: 1.5rem;
 	--secondary-text-font-size: 1rem;
+	
+	--over-background-text-color: #ffcc66;
 }
 
 header {
-	--header-margin-bottom: 2rem; 
-	--header-padding: 2rem;
-	--name-margin-bottom: 0.4rem;
-	--position-margin-bottom: 1.2rem; 
-	--photo-size: 4.5rem;
+	--header-margin-bottom: 4rem; 
+	--header-padding: 4rem;
+	--name-margin-bottom: 0.4rem; 
+	--position-margin-bottom: 1.75rem; 
+	--photo-size: 7.5rem;
 	--photo-box-shadow-size: 10px;
 	--photo-box-shadow-color: rgba( 0, 0, 0, 0.75 );
 	
-	--header-font-family: "Arial Black";
-	--name-font-size: 1.2rem;
+	/* --header-font-family: "Arial Black"; */
+	--name-font-size: 1.5rem;
 	--position-font-size: 0.8rem;
+}
+
+.main-nav {
+	--main-nav-margin-bottom: 1.75rem; 
+	--nav-links-space-between: 0.75rem; 
+	--link-mark-margin-top: 0.85rem; 
+	--link-mark-height: 2px; 
+	--main-nav-font-size: 0.85rem; 
 }
 
 .home {
@@ -59,8 +77,10 @@ header {
 .skills {
 	--graphic-representation-box-size: 4rem; 
 	--graphic-representation-border-width: 0.5rem; 
-	--graphic-representation-border-color: red; 
+	--graphic-representation-border-color: var( --main-text-color ); 
 	--graphic-representation-background-color: rgba( 255, 255, 255, 1 );
+	
+	
 	
 }
 
@@ -69,15 +89,18 @@ header {
 }
 
 .contact {
-	--contact-box-size: 18rem; 
-	--contact-box-padding: 2rem; 
-	--contact-entry-margin-bottom: 1.2rem; 
+	--contact-box-size: 22rem; 
+	--contact-box-padding: 3.25rem; 
+	--contact-entry-margin-bottom: 1.85rem; 
 	--contact-box-margin-bottom: 2rem;
 	--contact-box-margin-top: 5rem;
 	
-	--contact-icon-margin-bottom: 0.25rem; 
+	--contact-key-font-size: 0.85rem;
+	
+	--contact-icon-margin-bottom: 0.45rem; 
 	--contact-icon-size: 1rem;
-	--contact-key-margin-bottom: 0.05rem;
+	--contact-key-margin-bottom: 0.25rem;
+	--contact-icon-font-size: 1.25rem;
 }
 
 
