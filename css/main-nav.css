@@ -1,32 +1,35 @@
+.main-nav {
+	font-size: var( --main-nav-font-size );
+	
+}
+
 .nav-links {
 	display: flex; flex-direction: row;
 	
 }
 
 .nav-links li {
-	margin-right: 0.75rem;
+	margin-right: var( --nav-links-space-between );
 }
 
-.nav-links a {
+.link {
 	display: block;
-	height: 2rem; 
 	position: relative;
-//	background-color: var( --background-color );
 }
 
-.nav-links a:after {
+.link:after {
 	display: block;
-	width: 100%; height: 2px;
-	position: absolute; bottom: 0;
+	width: 100%; height: var( --link-mark-height );
+	margin-top: var( --link-mark-margin-top );
 	background-color: var( --text-color );
 	content: "";
 }
 
-.nav-links a:after {
+.link:after {
 	opacity: 0;
 }
 
-.nav-links a.current:after, .nav-links a:hover:after {
+.link.current:after, .link:hover:after {
 	opacity: 1;
 }
 
