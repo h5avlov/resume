@@ -19,9 +19,9 @@ const mainNavigation = {
 	
 	links: [
 		{
-			text: "Home", 
-			targetSelector: ".home", 
-			className: "home-link"
+			text: "Summary", 
+			targetSelector: ".summary", 
+			className: "summary-link"
 		}, 
 		
 		{
