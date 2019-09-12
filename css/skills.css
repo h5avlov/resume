@@ -1,21 +1,19 @@
-.graphic-representation /* , .graphic-representation:after */ {
+.graphic-representation {
 	background-color: var( --graphic-representation-background-color );
 }
 
 .graphic-representation {
 	display: flex; align-items: center; justify-content: center; 
-//	box-sizing: border-box;
 	width: var( --graphic-representation-box-size ); height: var( --graphic-representation-box-size );
 	position: relative; 
 	border-width: var( --graphic-representation-border-width ); border-style: solid; border-color: var( --graphic-representation-border-color );
 	border-radius: 50%;
 }
 
-.graphic-representation:after {
+.graphic-representation .mask {
 	display: block;
 	border-style: solid; border-width: 20px 4rem; border-color: transparent; border-right-color: var( --graphic-representation-background-color );
 	position: absolute; right: 0; margin-right: calc( -1 * var( --graphic-representation-border-width ) );
-	content: "";
 }
 
 .graphic-representation .value {
