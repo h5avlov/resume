@@ -21,7 +21,8 @@ $( document ).ready( function() {
 	let mainContent = $( "main" );
 	mainContent.slick( {
 		adaptiveHeight: true,
-		arrows: false
+		arrows: false,
+		speed: 500
 		
 	} );
 	
@@ -34,6 +35,22 @@ $( document ).ready( function() {
 				
 			mainContent.slick( "slickGoTo", nextSectionPos ); 
 		}
+		
+	} );
+
+} );
+
+$( document ).ready( function() {
+	
+	let entries = $( ".skills:not( .slick-cloned ) .entry" );
+	
+	$( skills.entries ).each( function( pos, element ) {
+		let value = this.level.graphicRepresentation, 
+			crossSectionSize = ( 100 - parseInt( value ) ) / 100 * 200, 
+			current = entries.eq( pos ).find( ".graphic-representation" ); 
+		current.append( "<div class= 'mask' />" );
+		
+	current.find( ".mask" ).css( { borderTopWidth: crossSectionSize + "px", borderBottomWidth: crossSectionSize + "px" } ); 
 		
 	} );
 
