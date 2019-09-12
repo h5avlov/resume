@@ -8,7 +8,7 @@ const person = {
 	name: "Ico Pavlov", 
 	position: "Web Designer + Developer", 
 	photo: {
-		src: ""
+		src: "abc2fdc6dfea08a7bff4359e48255a96.jpg"
 	}
 
 };
@@ -47,7 +47,10 @@ const mainNavigation = {
 
 const home = {
 	title: "Summary", 
-	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus."
+	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	image: {
+		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+	}
 };
 
 
@@ -55,6 +58,9 @@ const home = {
 const education = {
 	title: "Education", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	image: {
+		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+	}, 
 	
 	labels: {
 		major: "Major", 
@@ -66,14 +72,21 @@ const education = {
 		{
 			major: "Master of Arts", 
 			educationalFacility: "Harvard University", 
-			year: "2008",
+			year: "2016",
 			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
 		}, 
 		
 		{
 			major: "Bachelor of Arts", 
-			educationalFacility: "Oxford University", 
-			year: "2006",
+			educationalFacility: "Harvard University", 
+			year: "2014",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}, 
+		
+		{
+			major: "Communications And Design Specialist", 
+			educationalFacility: "Blue Mountain High School", 
+			year: "2010",
 			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
 		}
 		
@@ -84,6 +97,9 @@ const education = {
 const workExperience = {
 	title: "Work Experience", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	image: {
+		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+	}, 
 	
 	labels: {
 		position: "Job Position", 
@@ -93,16 +109,30 @@ const workExperience = {
 	
 	entries: [
 		{
-			position: "Front End Engineer", 
-			employerOrganization: "Ubisoft", 
-			year: "2012",
+			position: "UI/UX Design Lead", 
+			employerOrganization: "Rocket Designs", 
+			year: "2018",
 			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
 		}, 
 		
 		{
-			position: "Junior Front End Engineer", 
-			employerOrganization: "Ubisoft", 
-			year: "2010",
+			position: "Junior UI/UX Designer", 
+			employerOrganization: "Rocket Designs", 
+			year: "2017",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}, 
+		
+		{
+			position: "Digital Communications Associate", 
+			employerOrganization: "Weberest Digital Agency", 
+			year: "2017",
+			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+		}, 
+		
+		{
+			position: "Marketing Assistant", 
+			employerOrganization: "Blue Moon Lab", 
+			year: "2016",
 			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
 		}
 	]
@@ -112,6 +142,9 @@ const workExperience = {
 const skills = {
 	title: "Skills", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	image: {
+		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+	}, 
 	
 	labels: {
 		skill: "Skill", 
@@ -139,7 +172,7 @@ const skills = {
 			
 			level: {
 				wordRepresentation: "Advanced", 
-				graphicRepresentation: "90%"
+				graphicRepresentation: "85%"
 			}, 
 			
 			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
@@ -150,8 +183,8 @@ const skills = {
 			skill: "JS", 
 			
 			level: {
-				wordRepresentation: "Advanced", 
-				graphicRepresentation: "90%"
+				wordRepresentation: "Intermediate", 
+				graphicRepresentation: "75%"
 			}, 
 			
 			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
@@ -173,13 +206,13 @@ const contact = {
 		
 		{
 			label: "Email", 
-			value: "johndoe@gmail.com", 
+			value: "icopavlov@gmail.com", 
 			className: "email"
 		}, 
 		
 		{
 			label: "Website", 
-			value: "johndoe.com", 
+			value: "icopavlov.com", 
 			className: "website"
 		}
 	]
