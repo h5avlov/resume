@@ -3,11 +3,15 @@
 	display: none; 
 }
 
-.overview, .entry-list, header .key-value-pair, .main-nav, footer {
+.overview, .entry-list, .background-image, header .key-value-pair, .main-nav, footer {
 	box-sizing: border-box; 
-	max-width: 960px; 
+	max-width: var( --content-area-width ); 
 	margin-left: auto; margin-right: auto; 
-	padding-right: 15rem; 
+	padding-left: var( --field-left-width ); padding-right: var( --field-right-width ); 
+}
+
+.entry-list {
+	
 }
 
 header {
@@ -15,15 +19,37 @@ header {
 }
 
 .main-nav {
-	margin-bottom: 1.25rem;
+	margin-bottom: var( --main-nav-margin-bottom );
+	padding-right: 0; 
 }
 
 /* .overview, .entry {
 	margin-left: var( --entry-margin-left );
 } */
 
+section.section {
+	min-height: var( --section-min-height );
+	position: relative; 
+}
+
 .overview {
-	margin-bottom: 1.25rem; 
+	margin-bottom: var( --overview-margin-bottom ); 
+}
+
+.entry-list {
+//	box-sizing: content-box; 
+	padding-top: var( --overview-padding ); padding-bottom: var( --overview-padding ); 
+	padding-left: var( --field-left-width ); padding-right: var( --field-right-width ); 
+	position: relative;
+}
+
+.entry-list:after {
+	display: block;
+	width: var( --content-separator-width ); height: 100%;
+	position: absolute; left: var( --field-left-width ); top: 0; 
+	background-color: var( --text-color );
+	content: "";
+	
 }
 
 .entry {
@@ -34,20 +60,6 @@ header {
 
 .entry:last-of-type {
 	margin-bottom: 0; 
-	
-}
-
-.entry-list {
-	padding-top: var( --overview-padding ); padding-bottom: var( --overview-padding ); 
-	position: relative;
-}
-
-.entry-list:after {
-	display: block;
-	width: 1px; height: 100%;
-	position: absolute; left: 0; top: 0; 
-	background-color: var( --text-color );
-	content: "";
 	
 }
 
@@ -67,6 +79,16 @@ header {
 main {
 	margin-bottom: var( --content-margin-bottom );
 	
+}
+
+.background-image {
+	width: var( --content-area-width ); height: var( --section-min-height );
+	position: absolute; left: 50%; transform: translateX( -50% ); top: 0; z-index: -1; 
+	background-size: contain; background-repeat: no-repeat; background-position: center center;  
+}
+
+figure.background-image img {
+	display: none; 
 }
 
 a:link, a:visited, a:active, *:focus {
