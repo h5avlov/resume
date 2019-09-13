@@ -15,7 +15,7 @@
 	--body-text-line-height: 1.25; 
 	--text-color: #ff9900;
 	--over-background-text-color: #ffcc66;
-	--background-color: #003333; 
+	--background-color: #003333;
 	--highlight-font-family: Kalinga; 
 	
 	
@@ -40,11 +40,11 @@
 }
 
 header {
-	--header-margin-bottom: 3.25rem; 
-	--header-padding: 4rem;
+	--header-margin-bottom: 2rem; 
+	--header-padding: 3.125rem;
 	--name-margin-bottom: 0.4rem; 	
-	--position-margin-bottom: 2.75rem; 
-	--photo-margin-bottom: 2.25rem;
+	--position-margin-bottom: 1.75rem; 
+	--photo-margin-bottom: 3.5rem;
 	--photo-size: 7.5rem;
 	--photo-box-shadow-size: 10px;
 	--photo-box-shadow-color: rgba( 0, 0, 0, 0.75 );
