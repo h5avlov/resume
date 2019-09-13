@@ -35,7 +35,7 @@
 	
 	.graphic-representation {
 		order: -1;
-		width: 3.5rem; padding-top: 3.5rem; 
+		width: 4rem; padding-top: 4rem; 
 		position: relative; left: 0; top: 0; right: auto; margin-right: 0; 
 	}
 	
@@ -43,6 +43,11 @@
 }
 
 @media screen and ( max-width: 640px ) {
+	
+	:root {
+		--field-left-width: 2rem; 
+		--field-right-width: 2rem; 
+	}
 	
 	.entry section {
 		display: flex; flex-direction: column;
