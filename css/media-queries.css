@@ -1,0 +1,72 @@
+@media screen and ( max-width: 1280px ) {
+	
+	.background-image {
+		width: 100%; 
+	}
+	
+	
+}
+
+@media screen and ( max-width: 960px ) {
+	
+	:root {
+		--field-left-width: 12%;
+		--field-right-width: 15%; 
+	}
+	
+	.graphic-representation {
+		--graphic-representation-border-width: 0.25rem; 
+		margin-right: 2%; 
+		
+	}
+	
+	.graphic-representation:after {
+		width: 90%; height: 90%; 
+		left: 5%; top: 5%;
+	}
+	
+}
+
+@media screen and ( max-width: 720px ) {
+	
+	.skill-level {
+		display: flex; flex-direction: column;
+	}
+	
+	.graphic-representation {
+		order: -1;
+		width: 3.5rem; padding-top: 3.5rem; 
+		position: relative; left: 0; top: 0; right: auto; margin-right: 0; 
+	}
+	
+	
+}
+
+@media screen and ( max-width: 640px ) {
+	
+	.entry section {
+		display: flex; flex-direction: column;
+	}
+	
+	.year {
+		order: -1; 
+		width: auto; 
+		padding: 0.25rem; 
+		margin-right: auto; margin-bottom: 0.25rem; 
+		position: initial; 
+		border: 1px solid; 
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
