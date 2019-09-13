@@ -3,15 +3,11 @@
 	display: none; 
 }
 
-.overview, .entry-list, .background-image, header .key-value-pair, .main-nav, footer {
+.overview, .entry-list, .person, .background-image, .main-nav, footer {
 	box-sizing: border-box; 
 	max-width: var( --content-area-width ); 
 	margin-left: auto; margin-right: auto; 
 	padding-left: var( --field-left-width ); padding-right: var( --field-right-width ); 
-}
-
-.entry-list {
-	
 }
 
 header {
@@ -23,10 +19,6 @@ header {
 	padding-right: 0; 
 }
 
-/* .overview, .entry {
-	margin-left: var( --entry-margin-left );
-} */
-
 section.section {
 	min-height: var( --section-min-height );
 	position: relative; 
@@ -37,7 +29,6 @@ section.section {
 }
 
 .entry-list {
-//	box-sizing: content-box; 
 	padding-top: var( --overview-padding ); padding-bottom: var( --overview-padding ); 
 	padding-left: var( --field-left-width ); padding-right: var( --field-right-width ); 
 	position: relative;
@@ -72,7 +63,7 @@ section.section {
 	margin-bottom: var( --secondary-text-margin-bottom );
 }
 
-.year, .skill-level .graphic-representation {
+.year, .graphic-representation {
 	position: absolute; right: 100%; margin-right: var( --year-margin-right ); top: 0; 
 }
 
