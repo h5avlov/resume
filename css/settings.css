@@ -15,6 +15,7 @@
 	--body-text-line-height: 1.25; 
 	--text-color: #ff9900;
 	--over-background-text-color: #ffcc66;
+	--over-background-text-color: #ffcc99;
 	--background-color: #003333;
 	--highlight-font-family: Kalinga; 
 	
@@ -40,6 +41,7 @@
 }
 
 header {
+	--header-margin-top: 2rem;
 	--header-margin-bottom: 2rem; 
 	--header-padding: 3.125rem;
 	--name-margin-bottom: 0.4rem; 	
