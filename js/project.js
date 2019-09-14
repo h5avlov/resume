@@ -24,7 +24,7 @@ $( document ).ready( function() {
 		arrows: false,
 		swipe: false, 
 		speed: 500, 
-		initialSlide: 2
+		initialSlide: 0
 		
 	} );
 	
