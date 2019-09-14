@@ -22,7 +22,9 @@ $( document ).ready( function() {
 	mainContent.slick( {
 		adaptiveHeight: true,
 		arrows: false,
-		speed: 500
+		swipe: false, 
+		speed: 500, 
+		initialSlide: 2
 		
 	} );
 	
@@ -46,7 +48,7 @@ $( document ).ready( function() {
 	
 	$( skills.entries ).each( function( pos, element ) {
 		let value = this.level.graphicRepresentation, 
-			crossSectionSize = ( 100 - parseInt( value ) ) / 100 * 200, 
+			crossSectionSize = 100 - parseInt( value ), 
 			current = entries.eq( pos ).find( ".graphic-representation" ); 
 		current.append( "<div class= 'mask' />" );
 		
