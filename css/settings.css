@@ -10,14 +10,14 @@
 	--field-right-width: 35%; 
 	--background-image-size: 75%;
 	
-	--main-font-family: Arial;
+	--main-font-family: Kalinga; 
 	--main-font-size: 16px;
 	--body-text-line-height: 1.25; 
 	--text-color: #ff9900;
+	/* --text-color: #ffcc99; */
 	--over-background-text-color: #ffcc66;
-	--over-background-text-color: #ffcc99;
 	--background-color: #003333;
-	--highlight-font-family: Kalinga; 
+	--highlight-font-family: "Kalinga Bold"; 
 	
 	
 	/* General Section Settings */

@@ -10,6 +10,11 @@
 }
 
 @font-face {
+	font-family: "Kalinga Bold";
+	src: url( "../fonts/kalingab.ttf" );
+}
+
+@font-face {
 	font-family: "Ionicons";
 	src: url( "../fonts/ionicons.ttf" );
 }
@@ -24,7 +29,7 @@ body {
 	line-height: var( --body-text-line-height );
 }
 
-.header, .contact {
+header, .contact {
 	color: var( --over-background-text-color ); 
 }
 
@@ -47,10 +52,6 @@ header, .section-title {
 
 .secondary {
 	font-size: var( --secondary-text-font-size );
-}
-
-.year {
-//	font-weight: bold; 
 }
 
 
