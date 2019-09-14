@@ -33,6 +33,10 @@
 		left: 5%; top: 5%;
 	}
 	
+	.graphic-representation .mask {
+		right: 4%; 
+	}
+	
 }
 
 @media screen and ( max-width: 720px ) {

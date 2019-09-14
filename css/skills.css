@@ -22,9 +22,9 @@
 .graphic-representation .mask {
 	display: block;
 	border-style: solid; border-width: 20px var( --graphic-representation-mask-border-width ); border-color: transparent; 
-	border-right-color: var( --graphic-representation-background-color );
+	border-right-color: var( --graphic-representation-background-color ); // border-right-color: red; 
 	position: absolute; 
-	right: 0; 
+	right: 14%; 
 	top: 50%; transform: translateY( -50% );
 	z-index: 2;
 }
