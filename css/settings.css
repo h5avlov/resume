@@ -14,7 +14,6 @@
 	--main-font-size: 16px;
 	--body-text-line-height: 1.25; 
 	--text-color: #ff9900;
-	/* --text-color: #ffcc99; */
 	--over-background-text-color: #ffcc66;
 	--background-color: #003333;
 	--highlight-font-family: "Kalinga Bold"; 
@@ -33,6 +32,7 @@
 	--entry-padding-left: 2rem; 
 	--entry-separator-width: 1px;
 	--year-margin-right: 5%; 
+	--year-margin-bottom: 0.25rem; 
 	
 	--primary-text-margin-bottom: 0.05rem;
 	--secondary-text-margin-bottom: 0.75rem;
@@ -79,6 +79,7 @@ header {
 
 .skills {
 	--graphic-representation-box-size: 12%; 
+	--graphic-representation-margin-bottom: 0.25rem; 
 	--graphic-representation-border-width: 0.5rem; 
 	--graphic-representation-mask-border-width: 2.5rem; 
 	--graphic-representation-border-color: var( --main-text-color ); 

@@ -4,7 +4,7 @@
 
 .graphic-representation {
 	width: var( --field-left-width ); padding-top: var( --field-left-width );
-	margin-right: 0; 
+	margin-right: 0; margin-bottom: var( --graphic-representation-margin-bottom );
 }
 
 .graphic-representation:after {

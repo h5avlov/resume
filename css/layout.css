@@ -3,7 +3,7 @@
 	display: none; 
 }
 
-.overview, .entry-list, .person, .background-image, .main-nav, footer {
+.overview, .entry-list, .person .key-value-pair, .background-image, .main-nav, footer {
 	box-sizing: border-box; 
 	max-width: var( --content-area-width ); 
 	margin-left: auto; margin-right: auto; 
@@ -65,6 +65,10 @@ section.section {
 
 .year, .graphic-representation {
 	position: absolute; right: 100%; margin-right: var( --year-margin-right ); top: 0; 
+}
+
+.year {
+	margin-bottom: var( --year-margin-bottom );
 }
 
 main {

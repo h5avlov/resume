@@ -37,6 +37,14 @@
 
 @media screen and ( max-width: 720px ) {
 	
+	.skills {
+		--graphic-representation-box-size: 12%; 
+		--graphic-representation-border-width: 0.5rem; 
+		--graphic-representation-mask-border-width: 2.5rem; 
+		--graphic-representation-border-color: var( --main-text-color ); 
+		--graphic-representation-background-color: rgba( 255, 255, 255, 1 );
+	}
+	
 	.skill-level {
 		display: flex; flex-direction: column;
 	}
@@ -44,7 +52,9 @@
 	.graphic-representation {
 		order: -1;
 		width: 4rem; padding-top: 4rem; 
+		margin-bottom: 0.4rem;
 		position: relative; left: 0; top: 0; right: auto; margin-right: 0; 
+		border: 1px solid; 
 	}
 	
 	
@@ -55,6 +65,15 @@
 	:root {
 		--field-left-width: 2rem; 
 		--field-right-width: 2rem; 
+		--content-separator-width: 0; 
+		--entry-padding-left: 0; 
+		--entry-margin-bottom: 2.5rem; 
+		--overview-padding: 0;
+		--overview-margin-bottom: 2.5rem; 
+	}
+	
+	header {
+		--header-margin-bottom: 1rem; 
 	}
 	
 	.entry section {
@@ -65,7 +84,7 @@
 		order: -1; 
 		width: auto; 
 		padding: 0.25rem; 
-		margin-right: auto; margin-bottom: 0.25rem; 
+		margin-right: auto; 
 		position: initial; 
 		border: 1px solid; 
 	}
