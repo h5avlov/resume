@@ -1,0 +1,35 @@
+.percentage-wheel {
+	--border-ratio: calc( 2 / 25 );
+	--vertical-border: calc( var( --wheel-width ) * var( --border-ratio ) );
+}
+
+.fragment {
+	width: 0; height: var( --wheel-fragment-width ); 
+	position: absolute; left: 50%; top: 50%; margin-top: calc( -1 * var( --wheel-fragment-width ) / 2 );
+	padding-left: var( --wheel-radius );
+	border-style: solid; border-color: transparent; border-right-color: var( --wheel-color );
+	border-width: var( --vertical-border ) var( --wheel-width ); 
+	transform: rotateZ( 0deg ); transform-origin: 0 center; 
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
