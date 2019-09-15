@@ -23,7 +23,7 @@ $( document ).ready( function() {
 		adaptiveHeight: true,
 		arrows: false,
 		swipe: false, 
-		speed: 500, 
+		speed: 0, 
 		initialSlide: 0
 		
 	} );
