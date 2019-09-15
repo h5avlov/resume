@@ -24,7 +24,7 @@ $( document ).ready( function() {
 		arrows: false,
 		swipe: false, 
 		speed: 0, 
-		initialSlide: 0
+		initialSlide: 3
 		
 	} );
 	
@@ -44,7 +44,7 @@ $( document ).ready( function() {
 
 $( document ).ready( function() {
 	
-	let entries = $( ".skills:not( .slick-cloned ) .entry" );
+	/* let entries = $( ".skills:not( .slick-cloned ) .entry" );
 	
 	$( skills.entries ).each( function( pos, element ) {
 		let value = this.level.graphicRepresentation, 
@@ -54,6 +54,23 @@ $( document ).ready( function() {
 		
 	current.find( ".mask" ).css( { borderTopWidth: crossSectionSize + "px", borderBottomWidth: crossSectionSize + "px" } ); 
 		
+	} ); */
+
+} );
+
+$( document ).ready( function() {
+	
+	let entries = $( ".skills:not( .slick-cloned ) .entry" );
+	
+	$( skills.entries ).each( function( pos, element ) {
+		let value = parseInt( this.level.graphicRepresentation ), 
+			current = entries.eq( pos ).find( ".graphic-representation" );
+			
+		current.percentageWheel( {
+			level: value, 
+			symmetrical: true, 
+			wrapperClassName: "percentage-wheel"
+		} );
 	} );
 
 } );
