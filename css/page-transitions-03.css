@@ -1,0 +1,185 @@
+:root {
+	--overlay-correction-x: -50%;
+	--overlay-correction-y: -50%;
+	
+	--right-position-initial: 100%; 
+	
+}
+
+/* .entry {
+	--right-initial-position: 0;
+}
+
+.year, .graphic-representation {
+	--right-initial-position: 100%; 
+} */
+
+.section {
+	position: relative; z-index: 2; 
+}
+
+.main-nav, .overview, .entry-list {
+	position: relative; 
+	z-index: 2; 
+}
+
+.background-image {
+	z-index: 1; 
+}
+
+.section-title, .text, .entry-list, .background-image {
+	transform: translateY( 5rem );
+	opacity: 0; 
+}
+
+.entry {
+//	background-color: red; 
+	
+}
+
+.entry-list:after, .year, .graphic-representation {
+	
+}
+
+.entry-list:after {
+	left: auto; margin-left: auto; 
+	margin-right: calc( 100% - var( --field-left-width ) );
+}
+
+.year { 
+	margin-right: calc( 100% + var( --year-margin-right ) );
+}
+
+.graphic-representation { 
+	margin-right: 100%;
+}
+
+.entry, .entry-list:after, .year, .graphic-representation {
+	right: var( --entry-padding-left ); 
+}
+
+.entry-list:after, .year, .graphic-representation {
+	opacity: 0; 
+}
+
+.section-title, .text, .background-image, .entry-list, .entry, .entry-list:after, .year, .graphic-representation {
+	animation-duration: 0.75s;
+	animation-fill-mode: forwards; 
+}
+
+.section.slick-current .section-title, 
+.section.slick-current .text, 
+.section.slick-current .entry-list, 
+.section.slick-current .background-image {
+	animation-name: bring-upwards, fade-in; 
+}
+
+.section.slick-current .entry {
+	animation-name: shift-right; animation-duration: 0.2s; 
+}
+
+.section.slick-current .entry-list:after, 
+.section.slick-current .year, 
+.section.slick-current .graphic-representation {
+	animation-name: shift-right, fade-in; animation-duration: 0.2s; 
+}
+
+.section-title {
+	animation-delay: 0.2s;
+}
+
+.text {
+	animation-delay: 0.35s;
+}
+
+.entry-list {
+	animation-delay: 0.5s;
+}
+
+.entry {
+	animation-delay: 1.2s; 
+}
+
+.entry-list:after {
+	animation-delay: 1.2s;
+}
+
+.year, .graphic-representation {
+	animation-delay: 1.25s;
+}
+
+
+
+.background-image {
+	animation-delay: 0.15s;
+}
+
+
+@keyframes bring-upwards {
+		
+	0% {
+		transform: translateY( 5rem );
+	}
+	
+	100% {
+		transform: translateY( 0 ); 
+	}
+	
+}
+
+@keyframes fade-in {
+		
+	0% {
+		opacity: 0;
+	}
+	
+	100% {
+		opacity: 1; 
+	}
+	
+}
+
+@keyframes scale-up {
+		
+	0% {
+		transform: translate( -50%, -50% ) scale( 0 );
+	}
+	
+	50% {
+		transform: translate( -50%, -50% ) scale( 0.75 );
+	}
+	
+	100% {
+		transform: translate( -50%, -50% ) scale( 0 );
+	}
+	
+}
+
+@keyframes shift-right {
+		
+	0% {
+		right: var( --entry-padding-left );
+	}
+	
+	100% {
+		right: 0;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
