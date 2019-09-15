@@ -78,14 +78,21 @@ header {
 }
 
 .skills {
-	--graphic-representation-box-size: 12%; 
+	--graphic-representation-box-size: var( --field-left-width ); 
 	--graphic-representation-margin-bottom: 0.25rem; 
-	--graphic-representation-border-width: 0.5rem; 
+	/* --graphic-representation-border-width: 0.5rem; 
 	--graphic-representation-mask-border-width: 2.5rem; 
-	--graphic-representation-border-color: var( --main-text-color ); 
+	--graphic-representation-border-color: var( --main-text-color );  */
 	--graphic-representation-background-color: rgba( 255, 255, 255, 1 );
 	
-	
+}
+
+.percentage-wheel {
+	--wheel-size: 80%; 
+	--wheel-width: 0.75rem; 
+	--wheel-fragment-width: 0.3rem; 
+	--wheel-radius: 25%;
+	--wheel-color: var( --text-color ); 
 	
 }
 

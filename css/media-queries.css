@@ -24,31 +24,25 @@
 	}
 	
 	.graphic-representation {
+		--graphic-representation-box-size: 4.5rem; 
 		--graphic-representation-border-width: 0.25rem; 
-		margin-right: 2%; 
+	}
+	
+	.graphic-representation {
+		border-right: 0.75rem solid transparent; 
+	}
+	
+	.percentage-wheel {
+		--wheel-size: 90%; 
+		--wheel-width: 0.475rem; 
+		--wheel-fragment-width: 5.25%;  
+		--wheel-radius: 28%;
 		
-	}
-	
-	.graphic-representation:after {
-		width: 90%; height: 90%; 
-		left: 5%; top: 5%;
-	}
-	
-	.graphic-representation .mask {
-		right: 4%; 
 	}
 	
 }
 
 @media screen and ( max-width: 720px ) {
-	
-	.skills {
-		--graphic-representation-box-size: 12%; 
-		--graphic-representation-border-width: 0.5rem; 
-		--graphic-representation-mask-border-width: 2.5rem; 
-		--graphic-representation-border-color: var( --main-text-color ); 
-		--graphic-representation-background-color: rgba( 255, 255, 255, 1 );
-	}
 	
 	.skill-level {
 		display: flex; flex-direction: column;
@@ -56,7 +50,6 @@
 	
 	.graphic-representation {
 		order: -1;
-		width: 4rem; padding-top: 4rem; 
 		margin-bottom: 0.4rem;
 		position: relative; left: 0; top: 0; right: auto; margin-right: 0; 
 		border: 1px solid; 
