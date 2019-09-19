@@ -1,5 +1,6 @@
 .main-nav {
-	padding-top: 2rem; 
+	padding-top: var( --link-mark-shift );
+//	font-family: var( --highlight-font-family );
 	font-size: var( --main-nav-font-size );
 }
 
@@ -31,6 +32,8 @@
 	content: "";
 } */
 
+/* Vertical link mark */
+
 .link:before {
 	display: block; margin-left: auto; margin-right: auto; 
 	margin-bottom: 0.75rem; 
@@ -40,7 +43,7 @@
 }
 
 .link:before, .nav-links:hover .link:before {
-	transform: translateY( -2rem );
+	transform: translateY( calc( -1 * var( --link-mark-shift ) ) );
 	opacity: 0;
 }
 
@@ -48,10 +51,64 @@
 	transition-property: transform, opacity; transition-duration: 0.2s; 
 }
 
-.link.current:before, .nav-links:hover .link:hover:before {
+.link.current-link:before, .nav-links:hover .link:hover:before {
 	transform: translateY( 0 );
 	opacity: 1;
 }
+
+/* Horizontal link mark */
+
+/* .link:after {
+	display: block; 
+	height: var( --link-mark-height );
+	margin-top: var( --link-mark-margin-top );
+	background-color: var( --text-color );
+	content: "";
+}
+
+.link:after, .nav-links:hover .link:after {
+	width: 0;
+}
+
+.link:after {
+	transition-property: width; transition-duration: 0.2s; 
+}
+
+.link.current:after, .nav-links:hover .link:hover:after {
+	width: 100%;  
+} */
+
+.open-nav-button:before {
+	content: "\f394";
+}
+
+.button {
+	background-color: transparent; 
+	color: var( --text-color );
+	cursor: pointer; 
+}
+
+.floating-button {
+	padding-right: 0.75rem; 
+	position: fixed; right: 0; top: 50%; margin-top: calc( -1 * var( --button-icon-size ) / 2 );
+	transform: translateX( calc( 50% - var( --button-icon-size ) / 2 ) ) rotateZ( -90deg ); // transform-origin: right bottom; 
+	background: transparent; 
+//	border: 1px solid; 
+}
+
+.floating-button:hover {
+	background-color: var( --background-color ); 
+	color: var( --text-color );
+}
+
+.floating-button.visible {
+//	animation: slide-into-view 0.2s forwards;
+	
+}
+
+/* .floating-button, .main-nav-copy .close-nav-button {
+	display: block; 	
+} */
 
 
 
