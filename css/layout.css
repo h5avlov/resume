@@ -34,15 +34,6 @@ section.section {
 	position: relative;
 }
 
-.entry-list:after {
-	display: block;
-	width: var( --content-separator-width ); height: 100%;
-	position: absolute; left: var( --field-left-width ); top: 0; 
-	background-color: var( --text-color );
-	content: "";
-	
-}
-
 .entry {
 	padding-left: var( --entry-padding-left );
 	margin-bottom: var( --entry-margin-bottom ); 
@@ -51,6 +42,15 @@ section.section {
 
 .entry:last-of-type {
 	margin-bottom: 0; 
+	
+}
+
+.entry-list:after {
+	display: block;
+	width: var( --content-separator-width ); height: 100%;
+	position: absolute; left: var( --field-left-width ); top: 0; 
+	background-color: var( --text-color );
+	content: "";
 	
 }
 
@@ -77,7 +77,7 @@ main {
 }
 
 .background-image {
-	display: none; 
+//	display: none; 
 	width: var( --content-area-width ); height: var( --section-min-height );
 	position: absolute; left: 50%; margin-left: calc( -1 * var( --content-area-width ) / 2 ); top: 0; 
 	background-size: contain; background-repeat: no-repeat; background-position: center center;  
@@ -89,6 +89,29 @@ figure.background-image img {
 
 a:link, a:visited, a:active, *:focus {
 	outline: none; 
+}
+
+.button, .button:before {
+	height: var( --button-icon-size ); line-height: var( --button-icon-size );
+}
+
+.button {
+	display: inline-block; 
+	padding: 0; padding-left: var( --button-icon-size ); 
+	position: relative; 
+//	background-color: transparent; 
+	border: none; 
+}
+
+.button:before {
+	display: block;
+	width: var( --button-icon-size ); 
+	position: absolute; left: 0; top: 0;
+//	background-color: green;
+	font-family: Ionicons; 
+	content: "";
+	text-align: center; 
+	
 }
 
 
