@@ -8,7 +8,7 @@ function floatingNavigationBuilding( mainNav, navLinks ) {
 		preview = previewList( navLinks.find( ".link" ) ), 
 		label = $( "<div />" ).addClass( LABEL_CLASS ).text( LABEL_TEXT ), 
 		closeButtonPreview = $( "<div />" ).addClass( CLOSE_BUTTON_PREVIEW_CLASS ), 
-		buttonFloating = $( "<button />" ).addClass( BUTTON_FLOATING_CLASS ).addClass( OPEN_NAV_BUTTON_CLASS ).addClass( BUTTON_CLASS ).text( BUTTON_FLOATING_TEXT ), 
+		buttonFloating = $( "<button />" ).addClass( BUTTON_FLOATING_CLASS ).addClass( BUTTON_CLASS ).text( BUTTON_FLOATING_TEXT ), 
 		closeNavButton = $( "<button />" ).addClass( CLOSE_NAV_BUTTON_CLASS ).addClass( BUTTON_CLASS ).text( CLOSE_NAV_BUTTON_TEXT );
 		
 	// The floating navigation is initially a copy of the main navigation links list
