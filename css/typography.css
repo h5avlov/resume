@@ -5,6 +5,11 @@
 }
 
 @font-face {
+	font-family: Impact;
+	src: url( "../fonts/impact.ttf" );
+}
+
+@font-face {
 	font-family: "Kalinga";
 	src: url( "../fonts/kalinga.ttf" );
 }
