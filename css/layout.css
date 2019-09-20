@@ -97,21 +97,20 @@ a:link, a:visited, a:active, *:focus {
 
 .button {
 	display: inline-block; 
-	padding: 0; padding-left: var( --button-icon-size ); 
-	position: relative; 
-//	background-color: transparent; 
 	border: none; 
+	background-color: transparent; 
+	color: var( --text-color );
+	cursor: pointer; 
+}
+
+.button:before, .button:after {
+	display: inline-block;
+	width: var( --button-icon-size ); 
+	font-family: Ionicons; 
 }
 
 .button:before {
-	display: block;
-	width: var( --button-icon-size ); 
-	position: absolute; left: 0; top: 0;
-//	background-color: green;
-	font-family: Ionicons; 
-	content: "";
 	text-align: center; 
-	
 }
 
 

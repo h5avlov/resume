@@ -46,7 +46,7 @@
 	
 	:root {
 		--field-left-width: 2rem; 
-		--field-right-width: 2rem; 
+		--field-right-width: 3.25rem; 
 		--content-separator-width: 0; 
 		--entry-padding-left: 0; 
 		--entry-margin-bottom: 2.5rem; 
@@ -54,9 +54,9 @@
 		--overview-margin-bottom: 2.5rem; 
 	}
 	
-	header {
+	/* header {
 		--header-margin-bottom: 1rem; 
-	}
+	} */
 	
 	.entry section, .skill-level {
 		display: flex; flex-direction: column;
@@ -119,13 +119,26 @@
 
 @media screen and ( max-width: 780px ) {
 	
-	.main-nav .button {
-		display: block; 
+	.main-nav {
+		--main-nav-margin-bottom: 1.25rem; 
 	}
 	
-	.nav:not( .main-nav-copy ) {
+	.open-nav-button {
+		display: flex; 
+	}
+	
+	.main-nav > .nav-links {
 		display: none; 
 	}
+	
+	/* .floating-button.button {
+		margin-right: 0; 
+	}
+	
+	.button.floating-button.visible {
+		animation: none;
+		
+	} */
 	
 }
 

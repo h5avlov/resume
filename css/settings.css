@@ -44,7 +44,7 @@
 
 header {
 	--header-margin-top: 2rem;
-	--header-margin-bottom: 2rem; 
+	--header-margin-bottom: 2.75rem; 
 	--header-padding: 3.125rem;
 	--name-margin-bottom: 0.4rem; 	
 	--position-margin-bottom: 1.75rem; 
@@ -59,7 +59,7 @@ header {
 }
 
 .main-nav {
-	--main-nav-margin-bottom: 2rem; 
+	--main-nav-margin-bottom: 1.75rem; 
 	--nav-links-space-between: 0.75rem; 
 	--link-mark-margin-top: 0.85rem; 
 	--link-mark-height: 1px; 
