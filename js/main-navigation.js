@@ -12,11 +12,17 @@
 } */
 
 function mainNavigationInit( args ) {
-	let mainNav = args.nav, 
-		mainContent = args.content;
+	const mainNav = args.nav, 
+		mainContent = args.content, 
+		buttonOpenNav = args.buttonOpenNav, 
+		floatingNav = args.floatingNav;
 	
 	// Moving navigation from header to main on top of the content sections
 	mainContent.prepend( mainNav );
+	
+	buttonOpenNav.on( "click", function() {
+		openFloatingNav( floatingNav ); 
+	} );
 	
 	mainNav.on( "click", function( e ) {
 		navigationClickHandler( $( e.target ), mainNav, mainContent );
