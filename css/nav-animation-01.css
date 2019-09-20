@@ -108,19 +108,10 @@
 
 .floating-button {
 	width: auto; 
-//	padding-right: 0.75rem; // padding-left: calc( var( --button-icon-size ) + 0.5rem );
+//	padding-right: 0.75rem; 
 	position: fixed; right: 0; top: 50%; margin-top: calc( -1 * var( --button-icon-size ) / 2 );
 	transform: translateX( calc( 50% - var( --button-icon-size ) / 2 ) ) rotateZ( -90deg ); margin-right: var( --floating-button-initial-margin-right ); 
 	background: transparent;  
-}
-
-.floating-button:before {
-	content: "\f394";
-}
-
-.floating-button:hover {
-	background-color: var( --background-color ); 
-	color: var( --text-color );
 }
 
 .floating-button.visible {
