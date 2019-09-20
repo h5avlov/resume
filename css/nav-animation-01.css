@@ -41,7 +41,7 @@
 .floating-nav .nav-links {
 	padding-top: 1.75rem; 
 //	background-color: blue;
-	font-family: var( --highlight-font-family );
+	font-family: var( --highlight-font-family ); font-family: "Arial Black"; 
 	text-align: center; 
 	transform: translateY( -100% );
 }
@@ -57,7 +57,7 @@
 
 .floating-nav .link {
 	padding: 0.75rem; 
-//	border-bottom: 1px solid; 
+	border-bottom: 1px solid; 
 }
 
 .floating-nav li:last-of-type .link {
@@ -97,7 +97,7 @@
 .close-nav-button:before {
 	position: absolute; 
 	left: 50%; top: 50%; transform: translate( -50%, -50% );  
-	content: "\f2d7";
+	content: "\f129"; // content: "\f2d7";
 	text-indent: 0; 
 }
 
@@ -145,7 +145,7 @@
 }
 
 .nav-open .close-nav-button {
-	animation: fade-in 0.75s 1.4s forwards; 
+	animation: fade-in 0.75s 2s forwards; 
 }
 
 .nav-open .label.label-enter {
