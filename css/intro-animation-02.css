@@ -20,7 +20,7 @@
 }
 
 body {
-	--fragments-enter-delay: 1.2s;
+	--fragments-enter-delay: 0s;
 	--fragments-enter-duration: 0.4s;
 	
 	--stand-still-duration: 0.2s;
@@ -43,7 +43,7 @@ body {
 	--fragments-slide-limit: 1.75s;
 	
 	--wrapper-out-delay: calc( var( --heading-slide-left-delay ) + var( --fragments-slide-limit ) );
-	--wrapper-out-duration: 0.75s;
+	--wrapper-out-duration: 1.2s;
 	
 	--animation-end-time: calc( var( --wrapper-out-delay ) + var( --wrapper-out-duration ) ); 
 	--page-display-time: calc( var( --animation-end-time ) - 0.75s );
@@ -148,17 +148,17 @@ body > *, .intro, .intro .wrapper, .intro .heading, .intro .subheading, .intro .
 	animation-duration: var( --fragments-enter-duration ); 
 }
 
-.intro .left {
+.intro.play .left {
 	animation-name: slide-down; 
 	
 }
 
-.intro .right {
+.intro.play .right {
 	animation-name: slide-up; 
 	
 }
 
-.intro .wrapper {
+.intro.play .wrapper {
 	animation-name: rotate-left, rotate-out; 
 	animation-duration: var( --wrapper-rotation-duration ), var( --wrapper-out-duration ); 
 	animation-delay: var( --wrapper-rotation-delay ), var( --wrapper-out-delay ); 
@@ -168,11 +168,11 @@ body > *, .intro, .intro .wrapper, .intro .heading, .intro .subheading, .intro .
 	animation-duration: var( --heading-enter-duration ); animation-delay: var( --heading-enter-delay ); 
 }
 
-.intro .heading span {
+.intro.play .heading span {
 	animation-name: grow-upwards; 
 }
 
-.intro .subheading span {
+.intro.play .subheading span {
 	animation-name: grow-downwards; 
 }
 
@@ -181,17 +181,17 @@ body > *, .intro, .intro .wrapper, .intro .heading, .intro .subheading, .intro .
 	animation-duration: var( --heading-slide-left-duration ); animation-delay: var( --heading-slide-left-delay ); 
 }
 
-.intro .heading {
+.intro.play .heading {
 	animation-name: slide-left; animation-delay: var( --heading-slide-left-delay ); 
 	animation-duration: var( --heading-slide-left-duration );
 }
 
-.intro .subheading {
+.intro.play .subheading {
 	animation-name: slide-right; animation-delay: var( --heading-slide-left-delay ); 
 	animation-duration: var( --heading-slide-left-duration ); 
 }
 
-.intro {
+.intro.play {
 	animation-name: display-not; animation-duration: 0.0005s; animation-delay: var( --animation-end-time );
 }
 
