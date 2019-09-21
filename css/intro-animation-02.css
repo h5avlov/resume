@@ -40,7 +40,7 @@ body {
 	--subheading-slide-right-delay: calc( var( --subheading-enter-delay ) + var( --subheading-enter-duration ) );
 	--subheading-slide-right-duration: 20s; 
 	
-	--fragments-slide-limit: 1.25s;
+	--fragments-slide-limit: 1.75s;
 	
 	--wrapper-out-delay: calc( var( --heading-slide-left-delay ) + var( --fragments-slide-limit ) );
 	--wrapper-out-duration: 0.75s;
