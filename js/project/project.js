@@ -1,8 +1,5 @@
 $( document ).ready( function() {
 	
-	// Time to delay page rendering, depending on the intro animation duration
-	const pageLoadDelay = 0;
-	
 	// Delaying page rendering to prevent interfering when playing the intro animation
 	setTimeout( function() { 
 	
@@ -36,7 +33,7 @@ $( document ).ready( function() {
 		
 		graphicRepresentationInit();
 	
-	}, pageLoadDelay );
+	}, PAGE_LOAD_DELAY );
 	
 } );
 	

@@ -1,7 +1,8 @@
 
 // Specifying class names, mainly used for triggering animations 
 // and values
-const MIN_SCROLL_DOWN_PERCENTAGE = 40, 
+const PAGE_LOAD_DELAY = 1500, 
+	MIN_SCROLL_DOWN_PERCENTAGE = 40, 
 	MIN_SCROLL_DOWN = $( window ).height() * ( MIN_SCROLL_DOWN_PERCENTAGE / 100 ),
 	FLOATING_BUTTON_TIME_VISIBLE = 1000, 
 	BUTTON_CLASS = "button", 
