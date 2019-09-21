@@ -1,4 +1,10 @@
-$( document ).ready( function() {
+
+// Waiting the DOM to be loaded
+$( function() {
+	
+	callWhenLoaded( ".summary .background-image", function() {
+		$( ".intro" ).addClass( "play" );
+	} );
 	
 	// Delaying page rendering to prevent interfering when playing the intro animation
 	setTimeout( function() { 

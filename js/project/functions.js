@@ -10,6 +10,17 @@ function preventDefaultOn( event, elementSelector, containerSelector ) {
 }
 
 
+function callWhenLoaded( elementSelector, func ) {
+	if ( $( elementSelector ).length > 0 ) {
+		func();
+	} else {
+		setTimeout( function() {
+			callWhenLoaded( elementSelector, func );
+		}, 100 );
+	}
+}
+
+
 // Calls the eventHandler function on the navigation to make navigation buttons functional
 function navigationClickHandler( target, nav, mainContent ) {
 	eventHandler( {
