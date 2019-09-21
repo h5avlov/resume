@@ -4,7 +4,7 @@ function renderTemplates() {
 	
 	loadTemplate( ".person", "#person-template", person );
 	loadTemplate( "nav", "#nav-template", mainNavigation );
-	loadTemplate( ".home", "#home-template", home );
+	loadTemplate( ".summary", "#summary-template", summary );
 	loadTemplate( ".education", "#education-template", education );
 	loadTemplate( ".work-experience", "#work-experience-template", workExperience );
 	loadTemplate( ".skills", "#skills-template", skills );
