@@ -7,7 +7,7 @@
 	
 	
 	
-	--fragments-enter-delay: 0.4s;
+	--fragments-enter-delay: 1s;
 	--fragments-enter-duration: 0.4s;
 	
 	--stand-still-duration: 0.2s;
@@ -200,7 +200,7 @@ body > *, .intro, .intro .wrapper, .intro .heading, .intro .subheading, .intro .
 }
 
 .intro {
-	animation-name: remove; animation-duration: 0.2s; animation-delay: 3s;
+	animation-name: remove; animation-duration: 0.2s; animation-delay: 4s;
 }
 
 
