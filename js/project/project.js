@@ -1,7 +1,7 @@
 $( document ).ready( function() {
 	
 	// Time to delay page rendering, depending on the intro animation duration
-	const pageLoadDelay = 2000;
+	const pageLoadDelay = 0;
 	
 	// Delaying page rendering to prevent interfering when playing the intro animation
 	setTimeout( function() { 
