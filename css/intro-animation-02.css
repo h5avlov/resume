@@ -2,12 +2,25 @@
 	--circle-radius: 200%; 
 	--circle-border-width: 4rem;
 	--circle-initial-scale: 7; 
+
+	--wrapper-rotation-angle: -20deg;
+	--slide-value: 25%;
+	--slide-left-value: calc( -50% - var( --slide-value ) );
+	--slide-right-value: calc( -50% + var( --slide-value ) );
 	
 	
+	--circles-gap: 0.125rem; 
+	--text-height: 2rem;
+	--left-color: #ff9900;
+	--right-color: #003333;
+	--initial-font-size: 5rem;
+	--text-font-size: 28rem; 
+	--text-scale: 1; 
 	
-	
-	
-	--fragments-enter-delay: 1s;
+}
+
+body {
+	--fragments-enter-delay: 0.4s;
 	--fragments-enter-duration: 0.4s;
 	
 	--stand-still-duration: 0.2s;
@@ -32,25 +45,8 @@
 	--wrapper-out-delay: calc( var( --heading-slide-left-delay ) + var( --fragments-slide-limit ) );
 	--wrapper-out-duration: 0.75s;
 	
-	
-	
-	
-	--wrapper-rotation-angle: -20deg;
-	--slide-value: 25%;
-	--slide-left-value: calc( -50% - var( --slide-value ) );
-	--slide-right-value: calc( -50% + var( --slide-value ) );
-	
-	
-
-	
-	--circles-gap: 0.125rem; 
-	--text-height: 2rem;
-	--left-color: #ff9900;
-	--right-color: #003333;
-	--initial-font-size: 5rem;
-	--text-font-size: 28rem; 
-	--text-scale: 1; 
-	
+	--animation-end-time: calc( var( --wrapper-out-delay ) + var( --wrapper-out-duration ) ); 
+	--page-display-time: calc( var( --animation-end-time ) - 0.75s );
 }
 
 html {
@@ -59,7 +55,7 @@ html {
 }
 
 body > * {
-	animation-name: display-not, display; animation-duration: 0.0005s; animation-delay: 0s, 2.25s; 
+	animation-name: display-not, display; animation-duration: 0.0005s; animation-delay: 0s, var( --page-display-time ); 
 }
 
 .intro {
@@ -77,10 +73,6 @@ body > * {
 .intro {
 	transform-origin: left center;
 	overflow: hidden; 
-}
-
-.intro .wrapper {
-	
 }
 
 .intro .heading, .intro .subheading, .circles {
@@ -200,7 +192,7 @@ body > *, .intro, .intro .wrapper, .intro .heading, .intro .subheading, .intro .
 }
 
 .intro {
-	animation-name: remove; animation-duration: 0.2s; animation-delay: 4s;
+	animation-name: display-not; animation-duration: 0.0005s; animation-delay: var( --animation-end-time );
 }
 
 
