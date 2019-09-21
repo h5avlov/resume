@@ -1,5 +1,5 @@
 .intro {
-	--circle-radius: 200%; 
+	--circle-radius: 350%; 
 	--circle-border-width: 4rem;
 	--circle-initial-scale: 7; 
 
@@ -43,7 +43,7 @@ body {
 	--fragments-slide-limit: 1.75s;
 	
 	--wrapper-out-delay: calc( var( --heading-slide-left-delay ) + var( --fragments-slide-limit ) );
-	--wrapper-out-duration: 1.2s;
+	--wrapper-out-duration: 1s;
 	
 	--animation-end-time: calc( var( --wrapper-out-delay ) + var( --wrapper-out-duration ) ); 
 	--page-display-time: calc( var( --animation-end-time ) - 0.75s );
