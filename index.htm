@@ -9,9 +9,23 @@
 	<meta name= "author" content= "Ico Pavlov">
 	
 	<link href= "css/style.css" type= "text/css" rel= "stylesheet" />
+	<!-- jQuery -->
+	<script src= "js/libraries/jquery-3.2.0.min.js" type= "text/javascript"></script>
 </head>
 
 <body>
+
+<div class="intro">
+	<div class="wrapper">
+		<h1 class="heading"><span>Resume</span></h1>
+		<h2 class="subheading"><span>Ico Pavlov</span></h2>
+		
+		<div class="circles">
+			<div class="circle left"></div>
+			<div class="circle right"></div>
+		</div>
+	</div>
+</div>
 
 <header>
 	<h1 class= "subject">Resume</h1>
@@ -28,12 +42,12 @@
 	<section class= "contact"></section>
 </footer>
 
-<!-- jQuery -->
-<script src= "js/jquery-3.2.0.min.js" type= "text/javascript"></script>
+
+	
 <!-- Handlebars -->
-<script src= "js/handlebars/handlebars-v4.0.12.js"></script>
-<script src= "js/handlebars/handlebars-template-loading.js" type= "text/javascript"></script>
-<script src= "js/handlebars/context.json" type= "text/javascript"></script>
+<script src= "js/libraries/handlebars-v4.0.12.js"></script>
+<script src= "js/project/template-loading/render-templates.js" type= "text/javascript"></script>
+<script src= "js/project/template-loading/context.json" type= "text/javascript"></script>
 
 <!-- 
 -----------------------------------------------------------------------------
@@ -196,21 +210,26 @@
 </script>
 
 
+<!-- SlickSlider jQuery plugin -->
 <link href="plugins/slick-1.6.0/slick.css" rel="stylesheet">
 <script src= "plugins/slick-1.6.0/slick.min.js" type= "text/javascript"></script>
 
+<!-- Percentage-wheel jQuery plugin -->
 <link href= "plugins/percentage-wheel/percentage-wheel.css" rel="stylesheet"></script>
 <script src= "plugins/percentage-wheel/percentage-wheel.js" type= "text/javascript"></script>
 
-<script src= "js/settings.js" type= "text/javascript"></script>
-<script src= "js/functions.js" type= "text/javascript"></script>
-<script src= "js/content-pages-access.js" type= "text/javascript"></script>
-<script src= "js/floating-navigation-building.js" type= "text/javascript"></script>
-<script src= "js/main-navigation.js" type= "text/javascript"></script>
-<script src= "js/floating-navigation-functionality.js" type= "text/javascript"></script>
-<script src= "js/floating-navigation.js" type= "text/javascript"></script>
-<script src= "js/graphic-representation.js" type= "text/javascript"></script>
-<script src= "js/project.js" type= "text/javascript"></script>
+<!-- General scripts -->
+<script src= "js/project/settings.js" type= "text/javascript"></script>
+<script src= "js/project/functions.js" type= "text/javascript"></script>
+
+
+<script src= "js/project/content-access/content-access.js" type= "text/javascript"></script>
+<script src= "js/project/main-navigation/main-navigation.js" type= "text/javascript"></script>
+<script src= "js/project/floating-navigation/floating-navigation-building.js" type= "text/javascript"></script>
+<script src= "js/project/floating-navigation/floating-navigation-functionality.js" type= "text/javascript"></script>
+<script src= "js/project/floating-navigation/floating-navigation.js" type= "text/javascript"></script>
+<script src= "js/project/graphic-representation/graphic-representation.js" type= "text/javascript"></script>
+<script src= "js/project/project.js" type= "text/javascript"></script>
 
 
 
