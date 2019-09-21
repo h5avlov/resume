@@ -3,26 +3,40 @@
 	
 }
 
-.preview-wrapper {
-	position: absolute; left: -10000rem; 
+
+/* Ensures that contact section is behind floating navigation */
+
+main, footer {
+	position: relative; 
 }
 
+main {
+	z-index: 2; 
+}
+
+footer {
+	z-index: 1; 
+}
+
+
+/* Floating navigation is hidden initially */
 .floating-nav {
 	width: 100%; height: 0; overflow: hidden; 
 	position: fixed; left: 0; top: 0; z-index: 2; 
-	
 }
 
 .nav-wrapper, .nav-links-wrapper, .preview-wrapper {
 	position: absolute;
 }
 
+/* Wrapper to enclose the contents of the floating navigation */
 .nav-wrapper {
 	width: 200%; padding-top: 200%;
 	left: 50%; top: 50%; transform: translate( -50%, -50% );
 	z-index: 3; 
 }
 
+/* Wrappers, one holding the previews and the other, holding the nav links and the close button  */
 .nav-links-wrapper, .preview-wrapper {
 	display: flex; flex-direction: column; align-items: center;
 	width: 100%; height: 50%; left: 0; 
@@ -40,12 +54,12 @@
 
 .floating-nav .nav-links {
 	padding-top: 1.75rem; 
-//	background-color: blue;
 	font-family: var( --highlight-font-family ); font-family: "Arial Black"; 
 	text-align: center; 
 	transform: translateY( -100% );
 }
 
+/* Floating nav links are vertically distributed */
 .floating-nav .nav-links li {
 	float: none; 
 	margin: 0;
@@ -77,9 +91,10 @@
 	transform: translateY( -100% );
 }
 
+/* Elements that hold preview content */
 .preview, .label, .close-button-preview {
-//	font-size: 5rem; line-height: 1.4; 
-	transform: translateY( 100% );
+	line-height: 1.4; 
+	transform: translateY( 100% ); 
 }
 
 .preview, .close-button-preview {
@@ -106,27 +121,24 @@
 	font-family: Ionicons; font-size: 5rem; font-weight: bold; 
 }
 
+/* Button to open the floating navigation */
 .floating-button {
 	width: auto; 
-//	padding-right: 0.75rem; 
 	position: fixed; right: 0; top: 50%; margin-top: calc( -1 * var( --button-icon-size ) / 2 );
 	transform: translateX( calc( 50% - var( --button-icon-size ) / 2 ) ) rotateZ( -90deg ); margin-right: var( --floating-button-initial-margin-right ); 
 	background: transparent;  
+}
+
+
+/* Floating navigation stretches over the whole screen when on */
+.floating-nav.nav-open {
+	height: 100%; overflow: visible; 
 }
 
 .floating-button.visible {
 	animation-name: slide-into-view; animation-duration: 0.2s; animation-delay: 0s; animation-fill-mode: forwards;
 	
 }
-
-
-.floating-nav.nav-open {
-	height: 100%; overflow: visible; 
-}
-
-/* .nav-open .preview-wrapper {
-	height: auto; overflow: visible; 
-} */
 
 .nav-open .nav-links-wrapper {
 	animation: slide-up 0.8s forwards; 
@@ -156,6 +168,10 @@
 	animation: slide-up 0.2s forwards;
 }
 
+
+/* -----------------------------------------
+ * Keyframes 
+ *------------------------------------------*/
 
 @keyframes slide-up {
 	
