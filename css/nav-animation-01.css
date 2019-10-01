@@ -1,132 +1,39 @@
 .floating-nav {
 	--floating-button-initial-margin-right: calc( -1 * var( --button-icon-size ) );
+	--floating-button-enter-duration: 0.2s; 
+	
+	--nav-links-wrapper-slide-delay: 0s; 
+	--nav-links-wrapper-slide-duration: 0.8s;
+	
+	--preview-wrapper-slide-delay: var( --nav-links-wrapper-slide-delay ); 
+	--preview-wrapper-slide-duration: var( --nav-links-wrapper-slide-duration );
+
+	--nav-wrapper-rotation-relative-delay: 0.2s; 
+	--nav-wrapper-rotation-duration: 0.2s; 
+	--nav-wrapper-rotation-angle: -20deg; 
+	--nav-wrapper-rotation-delay: calc( var( --nav-links-wrapper-slide-delay ) + var( --nav-links-wrapper-slide-duration ) + var( --nav-wrapper-rotation-relative-delay ) ); 
+	
+	--label-slide-up-relative-delay: 0.2s; 
+	--label-slide-up-duration: 0.75s;
+	--label-slide-up-delay: calc( var( --nav-wrapper-rotation-delay ) + var( --nav-wrapper-rotation-duration ) + var( --label-slide-up-relative-delay ) ); 
+	
+	--nav-links-slide-down-delay: var( --label-slide-up-delay ); 
+	--nav-links-slide-down-duration: var( --label-slide-up-duration ); 
+	
+	--preview-slide-up-duration: 0.4s; 
+	
+	--close-button-animation-relative-delay: -0.175s; 
+	--close-button-fade-in-duration: 0.75s; 
+	--close-button-fade-in-delay: calc( var( --label-slide-up-delay ) + var( --label-slide-up-duration ) + var( --close-button-animation-relative-delay ) ); 
+	--close-button-scale-delay: var( --close-button-fade-in-delay ); 
+	--close-button-scale-duration: var( --close-button-fade-in-duration );
 	
 }
 
 
 /* Ensures that contact section is behind floating navigation */
-
-main, footer {
-	position: relative; 
-}
-
-main {
-	z-index: 2; 
-}
-
 footer {
-	z-index: 1; 
-}
-
-
-/* Floating navigation is hidden initially */
-.floating-nav {
-	width: 100%; height: 0; overflow: hidden; 
-	position: fixed; left: 0; top: 0; z-index: 2; 
-}
-
-.nav-wrapper, .nav-links-wrapper, .preview-wrapper {
-	position: absolute;
-}
-
-/* Wrapper to enclose the contents of the floating navigation */
-.nav-wrapper {
-	width: 200%; padding-top: 200%;
-	left: 50%; top: 50%; transform: translate( -50%, -50% );
-	z-index: 3; 
-}
-
-/* Wrappers, one holding the previews and the other, holding the nav links and the close button  */
-.nav-links-wrapper, .preview-wrapper {
-	display: flex; flex-direction: column; align-items: center;
-	width: 100%; height: 50%; left: 0; 
-	color: white; 
-	overflow: hidden; 
-}
-
-.nav-links-wrapper { 
-	top: 50%;
-	background-color: var( --background-color );
-	color: var( --text-color );
-	background-clip: content-box; 
-	transform: translateY( 100% );
-}
-
-.floating-nav .nav-links {
-	padding-top: 1.75rem; 
-	font-family: var( --highlight-font-family ); font-family: "Arial Black"; 
-	text-align: center; 
-	transform: translateY( -100% );
-}
-
-/* Floating nav links are vertically distributed */
-.floating-nav .nav-links li {
-	float: none; 
-	margin: 0;
-}
-
-.floating-nav .nav-links li {
-	margin-right: 0; 
-}
-
-.floating-nav .link {
-	padding: 0.75rem; 
-	border-bottom: 1px solid; 
-}
-
-.floating-nav li:last-of-type .link {
-	border: none; 
-}
-
-.floating-nav .link:before {
-	display: none; 
-}
-
-.preview-wrapper {
-	justify-content: flex-end; 
-	top: 0;
-	background-color: var( --text-color );
-	color: var( --background-color );
-	font-family: Impact; font-size: 4.5rem; 
-	transform: translateY( -100% );
-}
-
-/* Elements that hold preview content */
-.preview, .label, .close-button-preview {
-	line-height: 1.4; 
-	transform: translateY( 100% ); 
-}
-
-.preview, .close-button-preview {
-	position: absolute; bottom: 0; 
-}
-
-.close-nav-button.button {
-	width: var( --button-icon-size ); width: 4rem; height: 4rem; 
-	position: relative; 
-	text-indent: -10000rem;
-	text-align: center; 
-	opacity: 0; 
-}
-
-.close-nav-button:before {
-	position: absolute; 
-	left: 50%; top: 50%; transform: translate( -50%, -50% );  
-	content: "\f129"; // content: "\f2d7";
-	text-indent: 0; 
-}
-
-.close-button-preview:before {
-	content: "\f129";
-	font-family: Ionicons; font-size: 5rem; font-weight: bold; 
-}
-
-/* Button to open the floating navigation */
-.floating-button {
-	width: auto; 
-	position: fixed; right: 0; top: 50%; margin-top: calc( -1 * var( --button-icon-size ) / 2 );
-	transform: translateX( calc( 50% - var( --button-icon-size ) / 2 ) ) rotateZ( -90deg ); margin-right: var( --floating-button-initial-margin-right ); 
-	background: transparent;  
+	position: relative; z-index: 2;
 }
 
 
@@ -135,37 +42,52 @@ footer {
 	height: 100%; overflow: visible; 
 }
 
+
+.floating-button.visible, 
+.nav-links-wrapper, 
+.label-wrapper, 
+.nav-wrapper, 
+.nav-links, 
+.close-nav-button, 
+.label.label-enter, 
+.label-visible, 
+.close-button-label.visible {
+	animation-fill-mode: forwards;
+}
+
 .floating-button.visible {
-	animation-name: slide-into-view; animation-duration: 0.2s; animation-delay: 0s; animation-fill-mode: forwards;
+	animation-name: slide-into-view; animation-duration: var( --floating-button-enter-duration ); animation-delay: 0s; 
 	
 }
 
 .nav-open .nav-links-wrapper {
-	animation: slide-up 0.8s forwards; 
+	animation-name: slide-up; animation-duration: var( --nav-links-wrapper-slide-duration ); animation-delay: var( --nav-links-wrapper-slide-delay );
 }
 
-.nav-open .preview-wrapper {
-	animation: slide-down 0.8s forwards; 
+.nav-open .label-wrapper {
+	animation-name: slide-down; animation-duration: var( --preview-wrapper-slide-duration ); animation-delay: var( --preview-wrapper-slide-delay );
 }
 
 .nav-open .nav-wrapper {
-	animation: rotate-nav 0.2s 1s forwards;
+	animation-name: rotate-nav; animation-duration: var( --nav-wrapper-rotation-duration ); animation-delay: var( --nav-wrapper-rotation-delay ); 
 }
 
 .nav-open .nav-links {
-	animation: slide-down 0.75s 1.4s forwards; 
+	animation-name: slide-down; animation-duration: var( --nav-links-slide-down-duration ); animation-delay: var( --nav-links-slide-down-delay ); 
+}
+
+.nav-open .label-enter {
+	animation-name: slide-up; animation-duration: var( --label-slide-up-duration ); animation-delay: var( --label-slide-up-delay ); 
+}
+
+.nav-open .label-visible {
+	animation-name: slide-up; animation-duration: var( --preview-slide-up-duration ); 
 }
 
 .nav-open .close-nav-button {
-	animation: fade-in 0.75s 2s forwards; 
-}
-
-.nav-open .label.label-enter {
-	animation: slide-up 0.75s 1.4s forwards; 
-}
-
-.nav-open .preview-visible, .nav-open .label-visible, .nav-open .close-button-preview-visible {
-	animation: slide-up 0.2s forwards;
+	animation-name: fade-in, close-button-rotate; 
+	animation-duration: var( --close-button-fade-in-duration ); 
+	animation-delay: var( --close-button-fade-in-delay ); 
 }
 
 
@@ -220,7 +142,7 @@ footer {
 	}
 	
 	100% {
-		transform: translate( -50%, -50% ) rotateZ( -20deg );
+		transform: translate( -50%, -50% ) rotateZ( var( --nav-wrapper-rotation-angle) );
 	}
 	
 }
@@ -229,6 +151,34 @@ footer {
 	
 	100% {
 		margin-right: 0; 
+	}
+	
+}
+
+/* @keyframes close-button-rotate {
+	
+	0% {
+		transform: rotateZ( 90deg );
+	}
+	
+	100% {
+		transform: rotateZ( 0deg );
+	}
+	
+} */
+
+@keyframes close-button-rotate {
+	
+	0% {
+		transform: scale( 1 );
+	}
+	
+	50% {
+		transform: scale( 2 );
+	}
+	
+	100% {
+		transform: scale( 1 );
 	}
 	
 }

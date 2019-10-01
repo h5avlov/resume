@@ -1,12 +1,9 @@
 .main-nav {
-//	font-family: var( --highlight-font-family );
 	font-size: var( --main-nav-font-size );
 }
 
 .nav-links {
 	display: inline-block; 
-//	padding-top: var( --link-mark-shift );
-//	background-color: var( --text-color );
 }
 
 .nav-links li {
@@ -24,14 +21,6 @@
 	display: block;
 	position: relative;
 }
-
-/* .link:after {
-	display: block;
-	width: 100%; height: var( --link-mark-height ); 
-	margin-top: var( --link-mark-margin-top );
-	background-color: var( --text-color );
-	content: "";
-} */
 
 /* Vertical link mark */
 

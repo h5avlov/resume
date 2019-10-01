@@ -1,0 +1,127 @@
+/* Floating navigation is hidden initially */
+.floating-nav {
+	width: 100%; height: 0; overflow: hidden; 
+	position: fixed; left: 0; top: 0; z-index: 2; 
+}
+
+.nav-wrapper, .nav-links-wrapper, .label-wrapper {
+	position: absolute;
+}
+
+/* Wrapper to enclose the contents of the floating navigation */
+.nav-wrapper {
+	width: 200%; padding-top: 200%;
+	left: 50%; top: 50%; transform: translate( -50%, -50% );
+	z-index: 3; 
+}
+
+/* Wrappers, one holding the previews and the other, holding the nav links and the close button  */
+.nav-links-wrapper, .label-wrapper {
+	display: flex; flex-direction: column; align-items: center;
+	width: 100%; height: 50%; left: 0; 
+	color: white; 
+	overflow: hidden; 
+}
+
+.nav-links-wrapper { 
+	top: 50%;
+	background-color: var( --background-color );
+	color: var( --text-color );
+	background-clip: content-box; 
+	transform: translateY( 100% );
+}
+
+.floating-nav .nav-links {
+	padding-top: 1.75rem; 
+	font-family: var( --highlight-font-family ); font-family: "Arial Black"; 
+	text-align: center; 
+	transform: translateY( -100% );
+}
+
+/* Floating nav links are vertically distributed */
+.floating-nav .nav-links li {
+	float: none; 
+	margin: 0;
+}
+
+.floating-nav .nav-links li {
+	margin-right: 0; 
+}
+
+.floating-nav .link {
+	padding: 1rem; 
+	border-bottom: 1px solid; 
+}
+
+.floating-nav li:last-of-type .link {
+	border: none; 
+}
+
+.floating-nav .link:before {
+	display: none; 
+}
+
+.label-wrapper {
+	justify-content: flex-end; 
+	top: 0;
+	background-color: var( --text-color );
+	color: var( --background-color );
+	font-family: Impact; font-size: 4.5rem; 
+	transform: translateY( -100% );
+}
+
+/* Elements that hold preview content */
+.label, .close-button-label {
+	line-height: 1.4; 
+	transform: translateY( 100% ); 
+}
+
+.label, .close-button-label {
+	position: absolute; bottom: 0; 
+}
+
+.close-nav-button.button {
+	width: var( --button-icon-size ); width: 4rem; height: 4rem; 
+	position: relative; 
+	text-indent: -10000rem;
+	text-align: center; 
+	opacity: 0; 
+//	transform: rotateZ( 90deg ); transform: scale( 1 );
+}
+
+.close-nav-button:before {
+	position: absolute; 
+	left: 50%; top: 50%; transform: translate( -50%, -50% );  
+	content: "\f129"; // content: "\f2d7";
+	text-indent: 0; 
+}
+
+.close-button-label:before {
+	content: "\f129";
+	font-family: Ionicons; font-size: 5rem; font-weight: bold; 
+}
+
+/* Button to open the floating navigation */
+.floating-button {
+	width: auto; 
+//	padding-left: 1.25rem; 
+	position: fixed; right: 0; top: 50%; margin-top: calc( -1 * var( --button-icon-size ) / 2 );
+	transform: translateX( calc( 50% - var( --button-icon-size ) / 2 ) ) rotateZ( -90deg ); margin-right: var( --floating-button-initial-margin-right ); 
+	background: transparent;  
+//	border: 1px solid; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
