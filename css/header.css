@@ -3,33 +3,38 @@ header {
 }
 
 header {
-	padding-top: var( --header-padding ); // padding-bottom: var( --header-padding );
-	background-color: var( --background-color ); background-clip: padding-box; 
-	border-bottom-width: var( --header-border-width ); border-bottom-style: solid; border-bottom-color: transparent;  
-	color: var( --over-background-text-color );
+	box-sizing: border-box; 
+	padding-top: var( --header-padding ); 
+//	font-family: var( --highlight-font-family ); 
+}
+
+.person {
+	display: flex; flex-direction: column;
+	padding-right: 0; 
+}
+
+header .key-value-pair {
+	width: 100%; 	
 }
 
 .name {
-	margin-bottom: var( --name-margin-bottom );
-	font-size: var( --name-font-size );
+	font-size: var( --name-font-size ); 
 }
+
+/* .name .value {
+	display: inline-block; 
+	padding: 0.4rem; padding-bottom: 0.2rem; 
+	border: 1px solid; 
+} */
 
 header .position {
-	margin-bottom: var( --position-margin-bottom );
 	font-size: var( --position-font-size );
 }
-
-/* header .position .value {
-	display: inline-block; 
-	padding-top: 0.4rem; 
-	border-top: 1px solid; 
-} */
 
 .photo .value {
 	display: block; 
 	width: var( --photo-size );
 	height: var( --photo-size );
-	margin-bottom: calc( -1 * var( --header-border-width ) );
 	background-size: cover; 
 	border-radius: 50%; 
 	box-shadow: 0 0 var( --photo-box-shadow-size ) var( --photo-box-shadow-color );
@@ -39,10 +44,65 @@ header .position {
 	display: none; 
 }
 
+
+/* Top name/position - bottom photo */
+
 header {
-//	font-family: var( --header-font-family );
+	padding-top: var( --header-padding ); 
+	background-color: var( --background-color ); background-clip: padding-box; 
+	border-bottom-width: var( --header-border-width ); border-bottom-style: solid; border-bottom-color: transparent;  
 }
 
+.name {
+	order: 1;
+	margin-bottom: var( --name-margin-bottom );
+}
+
+header .position {
+	order: 2;
+	margin-bottom: var( --position-margin-bottom );
+}
+
+.photo {
+	order: 3; 
+	margin-bottom: calc( -1 * var( --header-border-width ) );
+}
+
+
+/* Top photo - bottom name/position */
+
+/* header {
+	margin-top: var( --header-margin-top ); 
+	border-top: var( --header-border-width ) solid transparent;
+}
+
+.person {
+	position: relative; 
+	background-color: var( --background-color );
+}
+
+.name {
+	order: 2;
+	margin-bottom: var( --name-margin-bottom );
+}
+
+header .position {
+	order: 3;
+	margin-bottom: var( --position-margin-bottom );
+}
+
+.photo {
+	order: 1; 
+	margin-bottom: var( --photo-margin-bottom ); margin-top: calc( -1 * var( --header-border-width ) );
+//	position: relative; 
+}
+
+.photo:after {
+	display: block;
+	width: 100%; height: var( --photo-size );
+	position: absolute; left: 0; top: 0; z-index: -1; 
+	content: "";
+} */
 
 
 

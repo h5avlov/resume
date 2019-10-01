@@ -18,7 +18,7 @@ const summary = {
 	title: "Summary", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
 	image: {
-		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+		src: "summary.png"
 	}
 };
 
@@ -27,7 +27,7 @@ const education = {
 	title: "Education", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
 	image: {
-		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+		src: "education.png"
 	}, 
 	
 	labels: {
@@ -67,7 +67,7 @@ const workExperience = {
 	title: "Work Experience", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
 	image: {
-		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+		src: "work-experience.png"
 	}, 
 	
 	labels: {
@@ -113,7 +113,7 @@ const skills = {
 	title: "Skills", 
 	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
 	image: {
-		src: "40848dcf-3757-42c8-a919-7de1a3085aec_1.29b3be02b5a09d52f4f6b06308b0e692.jpeg"
+		src: "skills.png"
 	}, 
 	
 	labels: {

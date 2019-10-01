@@ -12,7 +12,7 @@
 .percentage-wheel {
 	box-sizing: border-box; 
 	width: var( --wheel-size ); height: var( --wheel-size ); 
-	position: absolute; left: var( --percentage-wheel-shift ); top: var( --percentage-wheel-shift );
+	position: absolute; left: var( --percentage-wheel-shift ); top: var( --percentage-wheel-shift ); 
 }
 
 .graphic-representation .value {

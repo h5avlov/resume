@@ -1,44 +1,66 @@
-
 function mainNavigationInit( args ) {
-	const mainNav = args.nav, 
+	const mainNav = args.navigation, 
+		links = args.links, 
 		mainContent = args.content, 
-		buttonOpenNav = args.buttonOpenNav, 
-		floatingNav = args.floatingNav;
+		buttonOpenNav = mainNav.find( ".open-nav-button" ), 
+		currentLinkClass = args.currentLink;
+		
+	/* const navigationUtilities = navigationUtilitiesInit( {
+		navigation: mainNav,
+		links: links,
+		currentLinkClass: currentLinkClass, 
+		content: mainContent
+	} ); */
 	
 	// Moving navigation from header to main on top of the content sections, 
 	// simplifying its presentation
 	mainContent.prepend( mainNav );
 	
-	// Button to replace the main navigation 
-	// and open floating navigation on small screens
-	buttonOpenNav.on( "click", function() {
-		openFloatingNav( floatingNav ); 
-	} );
-	
 	// Clicking a button goes to the corresponding section
-	mainNav.on( "click", function( e ) {
-		navigationClickHandler( $( e.target ), mainNav, mainContent );
-	} );
+	/* mainNav.on( "click", function( e ) {
+		const target = $( e.target ); 
+		
+		// navigationClickHandler( mainNav, target, scrollTarget, mainContent, 200 ); 
+		navigationUtilities.clickHandler( target );
+	} ); */
 	
 	// Function to highlight the button in the navigation, corresponding to the current section
-	( function mainNavHighlighting( links, slider ) {
-		let currentLink; 
-		currentLink = highlightCurrentLink( links, slider.slick( "slickCurrentSlide" ) );
-		mainContent.on( "afterChange", function() {
-			currentLink = highlightCurrentLink( links, slider.slick( "slickCurrentSlide" ) );
+	/* ( function mainNavHighlighting( links, slider ) {
+		let nextLink; 
+		mainContent.on( "beforeChange", function( event, slick, currentSlidePos, nextSlidePos ) {
+			nextLink = highlightNextLink( links, nextSlidePos );
 		} );
 		
-		function highlightCurrentLink( links, currentSlidePos ) {
-			if ( currentLink !== undefined ) {
-				currentLink.removeClass( CURRENT_LINK_CLASS );
+		function highlightNextLink( links, nextSlidePos ) {
+			if ( nextLink !== undefined ) {
+				nextLink.removeClass( currentLinkClass );
 			}
-			return getCurrentLink( links, currentSlidePos ).addClass( CURRENT_LINK_CLASS );
+			return getNextLink( links, nextSlidePos ).addClass( currentLinkClass );
+		}
+		
+		function getNextLink( links, nextSlidePos ) {
+			return links.eq( nextSlidePos ); 
+		} */
+		
+		/* function getSlidePos( slide ) {
+			alert( slide );
+			
+			const slides = slider.find( ".slide" );
+			return slides.index( slide );
+			
+		} */
+		
+		/* function highlightCurrentLink( links, currentSlidePos ) {
+			if ( currentLink !== undefined ) {
+				currentLink.removeClass( currentLinkClass );
+			}
+			return getCurrentLink( links, currentSlidePos ).addClass( currentLinkClass );
 		}
 		
 		function getCurrentLink( links, currentSlidePos ) {
 			return links.eq( currentSlidePos ); 
-		}
-	}( mainNav.find( ".link" ), mainContent ) );
+		} */
+	/* }( links, mainContent ) ); */
 	
 }
 

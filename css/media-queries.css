@@ -8,10 +8,10 @@
 
 @media screen and ( max-width: 1280px ) {
 	
-	.background-image {
+	/* .background-image {
 		width: 100%; 
 		left: 0; margin-left: 0;
-	}
+	} */
 	
 	
 }
@@ -82,6 +82,10 @@
 		opacity: 1; 
 		animation: none; 
 		
+	}
+	
+	.background-image:after {
+		display: none; 
 	}
 	
 }
