@@ -13,7 +13,8 @@ function graphicRepresentationInit() {
 		current.percentageWheel( {
 			level: value, 
 			symmetrical: true, 
-			wrapperClassName: "percentage-wheel"
+			wrapperClassName: "percentage-wheel", 
+			isAnimated: true 
 		} );
 	} );
 }
