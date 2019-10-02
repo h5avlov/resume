@@ -1,0 +1,80 @@
+.graphic-representation {
+	--animation-start-delay: 1.595s;
+	--fragment-animation-duration: 0.125s;
+	--fragment-animation-delay-shift: -0.095; 
+	
+	--fragment-excluded-start-delay: 3.2s;
+	
+}
+
+.graphic-representation .fragment {
+	opacity: 0; 
+	transform: rotateZ( var( --fragment-rotation ) ); 
+}
+
+.skills.slick-current .fragment {
+	animation-name: fade-in; animation-delay: var( --fragment-animation-delay );
+	animation-duration: var( --fragment-animation-duration ); animation-fill-mode: forwards; 
+}
+
+/* .fragment.fragment-excluded {
+	opacity: 0; 
+	
+} */
+
+.skills.slick-current .fragment-excluded {
+	animation-name: fade-in, stick-out, rotate-out; 
+	animation-duration: var( --fragment-animation-duration ), 0.4s, 1.25s; 
+	animation-delay: var( --fragment-animation-delay ), calc( 1.25s + var( --fragment-animation-delay ) ), calc( 3.4s + calc( var( --max-excluded-delay ) - var( --fragment-animation-delay ) ) ); 
+	
+}
+
+@keyframes stick-out {
+	
+	0% {
+		transform: rotateZ( var( --fragment-rotation ) );
+	}
+	
+	100% {
+		transform: rotateZ( var( --fragment-rotation ) ) translateX( 0.8rem );
+	}
+	
+}
+
+@keyframes rotate-out {
+	
+	0% {
+		transform: rotateZ( var( --fragment-rotation ) ) translateX( 0.8rem );
+		opacity: 1; 
+	}
+	
+	20% {
+		opacity: 1; 
+	}
+	
+	100% {
+		transform: rotateZ( calc( var( --fragment-rotation ) + 185deg ) ) translateX( 0.8rem );
+		opacity: 0; 
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
