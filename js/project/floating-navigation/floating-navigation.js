@@ -107,6 +107,15 @@ function floatingNavigationInit( targetContainer, linksContainerCopy, floatingNa
 		labelInteraction.menuLabelOn(); 
 	} );
 	
+	
+	return {
+		floatingNav: floatingNav, 
+		openFloatingNavigation: function() {
+			floatingNavHandlers.open();
+		}
+	}; 
+	
+	
 	// Finds the position of link in a list of links
 	function getLinkPos( link ) {
 		return links.index( link ); 
