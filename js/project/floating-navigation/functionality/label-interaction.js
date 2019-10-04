@@ -6,7 +6,6 @@ function labelInteractionInit( args ) {
 	let currentLabel = null; 
 	
 	return {
-		
 		anyLabelOff: function() {
 			labelOff( currentLabel );
 		}, 
