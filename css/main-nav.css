@@ -6,6 +6,7 @@
 	display: inline-block; 
 }
 
+/* Making the navigation horizontal */
 .nav-links li {
 	float: left; 
 	margin-right: var( --nav-links-space-between );
@@ -22,7 +23,7 @@
 	position: relative;
 }
 
-/* Vertical link mark */
+/* Vertical link highlighting mark */
 
 .link:before {
 	display: block; margin-left: auto; margin-right: auto; 
@@ -31,6 +32,9 @@
 	background-color: var( --text-color );
 	content: "";
 }
+
+/* Link highlighting mark interactivity settings:
+ * the mark appears and slides from above down on hover */
 
 .link:before, .nav-links:hover .link:before {
 	transform: translateY( calc( -1 * var( --link-mark-shift ) ) );
