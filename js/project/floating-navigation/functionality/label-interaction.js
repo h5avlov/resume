@@ -6,28 +6,23 @@ function labelInteractionInit( args ) {
 	let currentLabel = null; 
 	
 	return {
-		labelOff: function( label ) {
-			if ( label !== null ) {
-				label.removeClass( LABEL_VISIBLE_CLASS ).removeClass( MENU_LABEL_INITIAL_CLASS );
-			}
-		}, 
+		
 		anyLabelOff: function() {
-			this.labelOff( currentLabel );
+			labelOff( currentLabel );
 		}, 
-		on: function( label, className ) {
-			this.labelOff( currentLabel );
-			label.addClass( className );
-			currentLabel = label; 
-		}, 
+		
 		labelOn: function( label ) {
-			this.on( label, LABEL_VISIBLE_CLASS );
+			on( label, LABEL_VISIBLE_CLASS );
 		}, 
+		
 		menuLabelOnEnter: function() {
-			this.on( menuLabel, MENU_LABEL_INITIAL_CLASS );
-		}, 
+			on( menuLabel, MENU_LABEL_INITIAL_CLASS );
+		},
+		
 		menuLabelOn: function() { 
 			this.labelOn( menuLabel );
 		}, 
+		
 		closeButtonLabelOn: function() {
 			this.labelOn( closeButtonLabel ); 
 		}, 
@@ -36,6 +31,18 @@ function labelInteractionInit( args ) {
 			return linkLabels[ linkPos ]; 
 		}
 	};
+	
+	function labelOff( label ) {
+		if ( label !== null ) {
+			label.removeClass( LABEL_VISIBLE_CLASS ).removeClass( MENU_LABEL_INITIAL_CLASS );
+		}
+	} 
+		
+	function on( label, className ) {
+		labelOff( currentLabel );
+		label.addClass( className );
+		currentLabel = label; 
+	} 
 	
 }
 
