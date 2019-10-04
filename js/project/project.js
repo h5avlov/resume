@@ -21,7 +21,8 @@ $( function() {
 			navLinks = mainNav.find( ".nav-links" ), 
 			links = navLinks.find( ".link" ), 
 			mainContent = $( "main" ), 
-			footer = $( "footer" );
+			footer = $( "footer" ), 
+			openNavButton = mainNav.find( ".open-nav-button" );
 		
 		// Turning the content sections into slides to animate a transition between them
 		contentAccess( mainContent ); 
@@ -33,9 +34,9 @@ $( function() {
 		} );
 		
 		// Floating navigation loading
-		floatingNavigationInit( footer, navLinks.clone(), floatingNavSettings );
-		// and getting a reference to
-		const floatingNav = $( ".floating-nav" ); 
+		// and getting a reference to it
+		// and its open method to use with the open button click handler
+		const { floatingNav, openFloatingNavigation } = floatingNavigationInit( footer, navLinks.clone(), floatingNavSettings );
 		
 		const navigationUtilities = navigationUtilitiesInit( {
 			navigations: [ mainNav, floatingNav ], 
@@ -48,12 +49,16 @@ $( function() {
 		
 		$( mainNav ).add( floatingNav ).on( "click", function( e ) {
 			const target = $( e.target );
-			if ( !target.is( ".link" ) ) {
-				return; 
-			}
-			navigationUtilities.clickHandler( $( this ), target );
+			if ( target.is( ".link" ) ) {
+				// Clicking on main navigation link or floating navigation link does the same thing
+				navigationUtilities.clickHandler( $( this ), target );
+			} else if ( target.is( openNavButton ) ) {
+				// Open nav button opens floating navigation on click
+				openFloatingNavigation();
+			} 
 		} );
 		
+		// Graphic representation plugin initializing
 		graphicRepresentationInit();
 	
 	}, SETTINGS.PAGE_LOAD_DELAY );
