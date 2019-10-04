@@ -86,29 +86,33 @@
 	text-indent: -10000rem;
 	text-align: center; 
 	opacity: 0; 
-//	transform: rotateZ( 90deg ); transform: scale( 1 );
+	transform: scale( 1 );
 }
 
 .close-nav-button:before {
+	display: none; 
+}
+
+.close-nav-button.button:after, .close-button-label:after {
+	content: "\f129";
+}
+
+.close-nav-button.button:after {
 	position: absolute; 
-	left: 50%; top: 50%; transform: translate( -50%, -50% );  
-	content: "\f129"; // content: "\f2d7";
+	left: 50%; top: 50%; transform: translate( -50%, -50% );   
 	text-indent: 0; 
 }
 
-.close-button-label:before {
-	content: "\f129";
+.close-button-label:after {
 	font-family: Ionicons; font-size: 5rem; font-weight: bold; 
 }
 
-/* Button to open the floating navigation */
+/* Button to open the floating navigation on small screens */
 .floating-button {
 	width: auto; 
-//	padding-left: 1.25rem; 
 	position: fixed; right: 0; top: 50%; margin-top: calc( -1 * var( --button-icon-size ) / 2 );
 	transform: translateX( calc( 50% - var( --button-icon-size ) / 2 ) ) rotateZ( -90deg ); margin-right: var( --floating-button-initial-margin-right ); 
 	background: transparent;  
-//	border: 1px solid; 
 }
 
 
