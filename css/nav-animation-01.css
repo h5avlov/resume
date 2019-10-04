@@ -43,19 +43,19 @@ footer {
 }
 
 
-.floating-button.visible, 
+.floating-button.button-visible, 
 .nav-links-wrapper, 
 .label-wrapper, 
 .nav-wrapper, 
 .nav-links, 
 .close-nav-button, 
-.label.label-enter, 
+.label.menu-label-enter, 
 .label-visible, 
 .close-button-label.visible {
 	animation-fill-mode: forwards;
 }
 
-.floating-button.visible {
+.floating-button.button-visible {
 	animation-name: slide-into-view; animation-duration: var( --floating-button-enter-duration ); animation-delay: 0s; 
 	
 }
@@ -76,7 +76,7 @@ footer {
 	animation-name: slide-down; animation-duration: var( --nav-links-slide-down-duration ); animation-delay: var( --nav-links-slide-down-delay ); 
 }
 
-.nav-open .label-enter {
+.nav-open .menu-label-enter {
 	animation-name: slide-up; animation-duration: var( --label-slide-up-duration ); animation-delay: var( --label-slide-up-delay ); 
 }
 

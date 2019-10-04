@@ -6,16 +6,6 @@
 	
 }
 
-@media screen and ( max-width: 1280px ) {
-	
-	/* .background-image {
-		width: 100%; 
-		left: 0; margin-left: 0;
-	} */
-	
-	
-}
-
 @media screen and ( max-width: 960px ) {
 	
 	:root {
@@ -54,10 +44,6 @@
 		--overview-margin-bottom: 2.5rem; 
 	}
 	
-	/* header {
-		--header-margin-bottom: 1rem; 
-	} */
-	
 	.entry section, .skill-level {
 		display: flex; flex-direction: column;
 	}
@@ -92,32 +78,6 @@
 
 @media screen and ( max-width: 640px ) {
 	
-	/* :root {
-		--field-left-width: 2rem; 
-		--field-right-width: 2rem; 
-		--content-separator-width: 0; 
-		--entry-padding-left: 0; 
-		--entry-margin-bottom: 2.5rem; 
-		--overview-padding: 0;
-		--overview-margin-bottom: 2.5rem; 
-	}
-	
-	header {
-		--header-margin-bottom: 1rem; 
-	} */
-	
-	/* .entry section {
-		display: flex; flex-direction: column;
-	}
-	
-	.entry .year {
-		order: -1; 
-		width: auto; 
-		padding: 0.25rem; 
-		margin-right: auto; 
-		position: initial; 
-		border: 1px solid; 
-	} */
 	
 }
 
@@ -134,15 +94,6 @@
 	.main-nav > .nav-links {
 		display: none; 
 	}
-	
-	/* .floating-button.button {
-		margin-right: 0; 
-	}
-	
-	.button.floating-button.visible {
-		animation: none;
-		
-	} */
 	
 }
 

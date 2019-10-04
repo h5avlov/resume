@@ -1,27 +1,17 @@
 
-// Specifying class names, mainly used for triggering animations 
-// and values
+// General page settings
 const SETTINGS = { 
-	PAGE: {
-		PAGE_LOAD_DELAY: 0 
-	}, 
+	PAGE_LOAD_DELAY: 0, 
+	SECTION_TRANSITION_DURATION: 500, 
+	INITIAL_SECTION_POSITION: 0,
 	
-	BUTTON: {
-		BUTTON_CLASS: "button" 
-	}, 
-	
-	LINK: { 
-		LINK_CLASS: "link", 
-		LINK_CURRENT_CLASS: "current-link" 
-	}, 
-	
-	MAIN_NAV: {
-		OPEN_NAV_BUTTON: {
-			OPEN_NAV_BUTTON_CLASS: "open-nav-button", 
-			OPEN_NAV_BUTTON_TEXT: "Menu"
-		}
-	}
-		
+	BUTTON_CLASS: "button", 
+
+	LINK_CLASS: "link", 
+	LINK_CURRENT_CLASS: "current-link", 
+
+	OPEN_NAV_BUTTON_CLASS: "open-nav-button", 
+	OPEN_NAV_BUTTON_TEXT: "Menu"
 }
 
 
