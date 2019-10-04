@@ -1,24 +1,14 @@
-function labelInteractionInit( labelVisibleClass, labelInitialClass ) {
-	const labelWrapper = $( ".label-wrapper" ), 
-		menuLabel = labelWrapper.find( ".menu-label" ), 
-		closeButtonLabel = labelWrapper.find( ".close-button-label" ), 
-		linkLabels = labelWrapper.find( ".link-label" ); 
+
+// Methods to use when defining the mouse-over-link interaction
+function labelInteractionInit( args ) {
+	const { menuLabel, closeButtonLabel, linkLabels } = args.labels; 
+	const { LABEL_VISIBLE_CLASS, MENU_LABEL_INITIAL_CLASS } = args.classes; 
 	let currentLabel = null; 
 	
 	return {
-		/* labelOn: function( label, className ) {
-			this.off( currentLabel );
-			label.addClass( className );
-			currentLabel = label; 
-		},  */
-		/* on: function( label ) {
-			this.off( currentLabel );
-			label.addClass( labelVisibleClass );
-			currentLabel = label; 
-		},  */
 		labelOff: function( label ) {
 			if ( label !== null ) {
-				label.removeClass( labelVisibleClass ).removeClass( labelInitialClass );
+				label.removeClass( LABEL_VISIBLE_CLASS ).removeClass( MENU_LABEL_INITIAL_CLASS );
 			}
 		}, 
 		anyLabelOff: function() {
@@ -30,10 +20,10 @@ function labelInteractionInit( labelVisibleClass, labelInitialClass ) {
 			currentLabel = label; 
 		}, 
 		labelOn: function( label ) {
-			this.on( label, labelVisibleClass );
+			this.on( label, LABEL_VISIBLE_CLASS );
 		}, 
 		menuLabelOnEnter: function() {
-			this.on( menuLabel, labelInitialClass );
+			this.on( menuLabel, MENU_LABEL_INITIAL_CLASS );
 		}, 
 		menuLabelOn: function() { 
 			this.labelOn( menuLabel );
@@ -43,7 +33,7 @@ function labelInteractionInit( labelVisibleClass, labelInitialClass ) {
 		}, 
 		
 		getLinkLabel: function( linkPos ) {
-			return linkLabels.eq( linkPos ); 
+			return linkLabels[ linkPos ]; 
 		}
 	};
 	

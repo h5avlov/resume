@@ -1,5 +1,6 @@
-function floatingNavHandlersInit( floatingNav, labelInteraction, CLASSES ) {
-	const { NAV_OPEN_CLASS, NAV_CLOSE_CLASS, LABEL_VISIBLE_CLASS, MENU_LABEL_INITIAL_CLASS  } = CLASSES;
+function floatingNavHandlersInit( floatingNavSettings, labelInteraction ) {
+	const floatingNav = floatingNavSettings.element, 
+		{ NAV_OPEN_CLASS, NAV_CLOSE_CLASS } = floatingNavSettings.classes; 
 	let isFloatingNavOpen = false; 
 	
 	return {
@@ -10,7 +11,7 @@ function floatingNavHandlersInit( floatingNav, labelInteraction, CLASSES ) {
 		}, 
 		open: function() {
 			labelInteraction.menuLabelOnEnter();
-			swapClasses( NAV_CLOSE_CLASS, NAV_OPEN_CLASS );
+			swapClasses( NAV_CLOSE_CLASS, NAV_OPEN_CLASS ); 
 			isFloatingNavOpen = true;
 		}, 
 		scroll: function() {

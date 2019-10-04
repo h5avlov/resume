@@ -1,19 +1,36 @@
 
-function floatingNavigationBuilding( targetContainer, navigationLinksCopy, FLOATING_NAV_BUILDING_SETTINGS ) {
-	
-	const { FLOATING_NAV_CLASS, BUTTON_CLASS, BUTTON_FLOATING_CLASS, CLOSE_BUTTON_CLASS, LABEL_CLASS, MENU_LABEL_CLASS, LINK_LABEL_CLASS, CLOSE_BUTTON_LABEL_CLASS } = FLOATING_NAV_BUILDING_SETTINGS.CLASSES; 
-	const { BUTTON_FLOATING_TEXT, CLOSE_BUTTON_TEXT, MENU_LABEL_TEXT } = FLOATING_NAV_BUILDING_SETTINGS.TEXT; 
+function floatingNavigationBuilding( targetContainer, navigationLinksCopy, floatingNavSettings ) {
+	// Getting data from the settings object
+	const {
+		FLOATING_NAV_CLASS, 
+		NAV_LINKS_WRAPPER_CLASS, 
+		NAV_WRAPPER_CLASS, 
+		
+		BUTTON_CLASS, 
+		BUTTON_FLOATING_CLASS, 
+		BUTTON_FLOATING_TEXT,
+		BUTTON_CLOSE_CLASS, 
+		BUTTON_CLOSE_TEXT, 
+		
+		LABEL_CLASS, 
+		LABEL_WRAPPER_CLASS, 
+		MENU_LABEL_CLASS, 
+		MENU_LABEL_TEXT, 
+		CLOSE_BUTTON_LABEL_CLASS, 
+		LINK_LABEL_CLASS
+	} = floatingNavSettings;
 	
 	// Creating the additional structural elements, required for floating navigation proper functioning
-	const floatingNav = $( "<div />" ).addClass( "floating-nav" ), 
-		navWrapper = $( "<div />" ).addClass( "nav-wrapper" ), 
-		navLinksWrapper = $( "<div />" ).addClass( "nav-links-wrapper" ), 
-		labelWrapper = $( "<div />" ).addClass( "label-wrapper" ), 
-		linkLabels = buildLinkLabelsList( navigationLinksCopy.find( ".link" ) ), 
+	const floatingNav = $( "<div />" ).addClass( FLOATING_NAV_CLASS ), 
+		navWrapper = $( "<div />" ).addClass( NAV_WRAPPER_CLASS ), 
+		navLinksWrapper = $( "<div />" ).addClass( NAV_LINKS_WRAPPER_CLASS ), 
+		labelWrapper = $( "<div />" ).addClass( LABEL_WRAPPER_CLASS ), 
+		links = navigationLinksCopy.find( ".link" ), 
+		linkLabels = buildLinkLabelsList( links ), 
 		menuLabel = $( "<div />" ).addClass( LABEL_CLASS ).addClass( MENU_LABEL_CLASS ).text( MENU_LABEL_TEXT ), 
 		closeButtonLabel = $( "<div />" ).addClass( LABEL_CLASS ).addClass( CLOSE_BUTTON_LABEL_CLASS ), 
 		buttonFloating = $( "<button />" ).addClass( BUTTON_FLOATING_CLASS ).addClass( BUTTON_CLASS ).text( BUTTON_FLOATING_TEXT ), 
-		buttonClose = $( "<button />" ).addClass( CLOSE_BUTTON_CLASS ).addClass( BUTTON_CLASS ).text( CLOSE_BUTTON_TEXT );
+		buttonClose = $( "<button />" ).addClass( BUTTON_CLOSE_CLASS ).addClass( BUTTON_CLASS ).text( BUTTON_CLOSE_TEXT );
 		
 	// The floating navigation is initially a copy of the main navigation links list
 	let floatingNavBase = navigationLinksCopy.appendTo( targetContainer );
@@ -25,13 +42,22 @@ function floatingNavigationBuilding( targetContainer, navigationLinksCopy, FLOAT
 	floatingNav.append( navWrapper ).append( buttonFloating );
 	targetContainer.append( floatingNav );
 	
+	// Returns references to the created elements
 	return {
-		floatingNav: floatingNav, 
-		buttonFloating: buttonFloating, 
-		buttonClose: buttonClose
+		floatingNav, 
+		navWrapper, 
+		navLinksWrapper, 
+		labelWrapper, 
+		navLinks: navigationLinksCopy, 
+		links, 
+		linkLabels, 
+		menuLabel, 
+		closeButtonLabel, 
+		buttonFloating, 
+		buttonClose
 	};
 				
-	// Mapping each link to a preview element, containing the text of the link
+	// Function for mapping each link to a preview element, containing the text of the link
 	function buildLinkLabelsList( links ) {
 		let list = [];
 		links.each( function( pos, link ) { 

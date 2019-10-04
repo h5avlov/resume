@@ -7,9 +7,8 @@ function contentAccess( content ) {
 		fade: true, 
 		arrows: false,
 		swipe: false, 
-		speed: 500, 
-		initialSlide: 0 
-		
+		speed: SETTINGS.SECTION_TRANSITION_DURATION, 
+		initialSlide: SETTINGS.INITIAL_SECTION_POSITION
 	} );
 }
 

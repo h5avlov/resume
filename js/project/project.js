@@ -29,17 +29,11 @@ $( function() {
 		// Main navigation is linked to the content to allow controlling it
 		mainNavigationInit( {
 			navigation: mainNav,
-			links: links, 
-			content: mainContent/* , 
-			navigationUtilities: navigationUtilities */
-			/* , 
-			classNames: {
-				currentLink: SETTINGS.LINK.LINK_CURRENT_CLASS
-			} */
+			content: mainContent
 		} );
 		
 		// Floating navigation loading
-		floatingNavigationInit( footer, navLinks.clone(), FLOATING_NAV_SETTINGS );
+		floatingNavigationInit( footer, navLinks.clone(), floatingNavSettings );
 		// and getting a reference to
 		const floatingNav = $( ".floating-nav" ); 
 		
@@ -49,7 +43,7 @@ $( function() {
 			sectionCurrentClass: "section-open", 
 			sectionIdleClass: "section-close", 
 			scrollTarget: mainNav, 
-			linkCurrentClass: SETTINGS.LINK.LINK_CURRENT_CLASS
+			linkCurrentClass: SETTINGS.LINK_CURRENT_CLASS
 		} ); 
 		
 		$( mainNav ).add( floatingNav ).on( "click", function( e ) {
@@ -61,10 +55,8 @@ $( function() {
 		} );
 		
 		graphicRepresentationInit();
-		
-		// smoothScrollInit( floatingNav, mainNav );
 	
-	}, SETTINGS.PAGE.PAGE_LOAD_DELAY );
+	}, SETTINGS.PAGE_LOAD_DELAY );
 	
 } );
 	
