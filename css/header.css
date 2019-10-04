@@ -1,12 +1,15 @@
+
+/* Header bottom border width equals to one half of the photo height, 
+ * that way keeping the entire photo inside the header box */
 header {
 	--header-border-width: calc( var( --photo-size ) / 2 );
 }
 
 header {
 	box-sizing: border-box; 
-	padding-top: var( --header-padding ); 
 }
 
+/* Using Flexbox to define vertical distribution of the person name, position and photo */
 .person {
 	display: flex; flex-direction: column;
 	padding-right: 0; 
@@ -24,10 +27,10 @@ header .position {
 	font-size: var( --position-font-size );
 }
 
+/* The photo is given the form of a circle with a drop shadow */
 .photo .value {
 	display: block; 
-	width: var( --photo-size );
-	height: var( --photo-size );
+	width: var( --photo-size ); height: var( --photo-size );
 	background-size: cover; 
 	border-radius: 50%; 
 	box-shadow: 0 0 var( --photo-box-shadow-size ) var( --photo-box-shadow-color );
@@ -38,13 +41,15 @@ header .position {
 }
 
 
-/* Top name/position - bottom photo */
+/* Top name-position/bottom photo */
 
 header {
 	padding-top: var( --header-padding ); 
 	background-color: var( --background-color ); background-clip: padding-box; 
 	border-bottom-width: var( --header-border-width ); border-bottom-style: solid; border-bottom-color: transparent;  
 }
+
+/* Bottom margin is used to create vertical distance between the person name, position and photo */
 
 .name {
 	order: 1;
@@ -86,8 +91,7 @@ header .position {
 
 .photo {
 	order: 1; 
-	margin-bottom: var( --photo-margin-bottom ); margin-top: calc( -1 * var( --header-border-width ) );
-//	position: relative; 
+	margin-bottom: var( --photo-margin-bottom ); margin-top: calc( -1 * var( --header-border-width ) ); 
 }
 
 .photo:after {
