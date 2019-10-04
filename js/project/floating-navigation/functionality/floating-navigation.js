@@ -19,10 +19,7 @@ function floatingNavHandlersInit( floatingNavSettings, labelInteraction ) {
 				this.close(); 
 			}
 		}
-		/* , 
-		isOpen: function() {
-			return isFloatingNavOpen; 
-		} */
+		
 	};
 	
 	// Function to control floating nav state by removing a class and adding another, 
