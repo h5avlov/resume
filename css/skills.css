@@ -1,3 +1,6 @@
+
+/* Graphic representation box and percentage wheel box are squares */
+
 .graphic-representation {
 	width: var( --graphic-representation-box-size ); padding-top: var( --graphic-representation-box-size );
 	margin-right: 0; margin-bottom: var( --graphic-representation-margin-bottom );
@@ -5,6 +8,7 @@
 	overflow: hidden; 
 }
 
+/* Finds the left and top distance from the bounding box to center the percentage wheel */
 .percentage-wheel {
 	--percentage-wheel-shift: calc( ( 100% - var( --wheel-size ) ) / 2 ); 
 }
@@ -15,6 +19,7 @@
 	position: absolute; left: var( --percentage-wheel-shift ); top: var( --percentage-wheel-shift ); 
 }
 
+/* The numeric percentage value is placed at the center of the wheel */
 .graphic-representation .value {
 	position: absolute; left: 50%; top: 50%; transform: translate( -50%, -50% ); z-index: 3; 
 	
