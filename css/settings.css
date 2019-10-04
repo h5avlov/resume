@@ -1,5 +1,5 @@
-/* This file provides a convinient way 
- * to easily fine-tune the visual presentation of the content 
+/* This file provides a convinient way to easily
+ * fine-tune or change the visual presentation of the content 
  */
 
 :root {
@@ -11,12 +11,12 @@
 	--background-image-size: 75%;
 	
 	--main-font-family: Kalinga; 
+	--highlight-font-family: "Kalinga Bold"; 
 	--main-font-size: 16px;
 	--body-text-line-height: 1.25; 
 	--text-color: #ff9900;
 	--over-background-text-color: #ffcc66;
 	--background-color: #003333;
-	--highlight-font-family: "Kalinga Bold"; 
 	
 	
 	/* General Section Settings */
@@ -42,6 +42,12 @@
 	--button-icon-size: 2rem;
 }
 
+.background-image {
+	--background-image-width: 340px; 
+	--circle-radius: calc( 90 / 100 * var( --background-image-width ) ); 
+	--circle-width: 15px; 
+}
+
 header {
 	--header-margin-top: 2rem;
 	--header-margin-bottom: 2.75rem; 
@@ -53,7 +59,6 @@ header {
 	--photo-box-shadow-size: 10px;
 	--photo-box-shadow-color: rgba( 0, 0, 0, 0.75 );
 	
-	/* --header-font-family: "Arial Black"; */
 	--name-font-size: 1.475rem;
 	--position-font-size: 0.8rem;
 }
@@ -65,18 +70,6 @@ header {
 	--link-mark-height: 1px; 
 	--link-mark-shift: 2rem;
 	--main-nav-font-size: 0.85rem; 
-}
-
-.home {
-	
-}
-
-.education {
-	
-}
-
-.work-experience {
-	
 }
 
 .skills {
