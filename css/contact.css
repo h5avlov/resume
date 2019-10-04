@@ -1,7 +1,8 @@
 
+/* The contact box is a square */
 .contact {
 	box-sizing: border-box; 
-	max-width: 100%; overflow-x: scroll; overflow-y: hidden; 
+	max-width: 100%; 
 	width: var( --contact-box-size ); height: var( --contact-box-size );
 	padding: var( --contact-box-padding ); 
 	margin-top: var( --contact-box-margin-top ); margin-bottom: var( --contact-box-margin-bottom );
@@ -9,16 +10,20 @@
 	
 }
 
+/* Bottom margin is used to set the vertical distance between the entries */
 .contact .key-value-pair {
 	margin-bottom: var( --contact-entry-margin-bottom );
 	
 }
 
+/* Sets the distance between the description and the value of each entry */
 .contact .key {
 	display: block; 
 	margin-bottom: var( --contact-key-margin-bottom );
 	font-size: var( --contact-key-font-size );
 }
+
+/* Pseudo-elements hold contact entries icons */
 
 .contact .key:before {
 	display: block; 
