@@ -9,9 +9,9 @@ function utilitiesInit() {
 				}
 				e.preventDefault();
 			} );
-		}, 
+		},
 
-        // Waits for an element to be loaded and then calls a function
+		// Waits for an element to be loaded and then calls a function
 		callWhenLoaded: function( elementSelector, func ) {
 			const containingObject = this;
 			if ( $( elementSelector ).length > 0 ) {
@@ -43,19 +43,19 @@ function navigationUtilitiesInit( args ) {
 	markCurrentSection(); 
 	markCurrentSectionOnChange();
 	
-    return {
-        // Method to call when a click on a navigation occurs 
+	return {
+		// Method to call when a click on a navigation occurs
         clickHandler: function (navigation, link) {
-            // Getting the clicked link position
-			const linkPos = getLinkPosIn( navigation, link );
+			// Getting the clicked link position
+			const linkPos = getLinkPosIn(navigation, link);
 
-            // Marking the link and transitioning sections 
+			// Marking the link and transitioning sections
 			markCurrentLinks( linkPos ); 
 			goToTargetSection( linkPos );
 		}
 	};
-	
-    // Sections are marked (current one) and unmarked (former one) after a slide transition
+
+	// Sections are marked (current one) and unmarked (former one) after a slide transition
 	function markCurrentSectionOnChange() {
 		content.on( "afterChange", function() {
 			markCurrentSection(); 
@@ -63,27 +63,27 @@ function navigationUtilitiesInit( args ) {
 		
 	}
 
-    // Current section receives a class, used to control its presentation on entering
-    // and previous section receives a class to possibly control its presentation on exitting
+	// Current section receives a class, used to control its presentation on entering
+	// and previous section receives a class to possibly control its presentation on exitting
 	function markCurrentSection() {
 		currentSection.removeClass( sectionCurrentClass ).addClass( sectionIdleClass ); 
 		currentSection = getCurrentSection(); 
 		currentSection.removeClass( sectionIdleClass ).addClass( sectionCurrentClass );
 	}
 
-    // Returns a section by its position
+	// Returns a section by its position
 	function getSection( sectionPos ) {
 		return sections.eq( sectionPos );
 	}
 
-    // Returns the current section
+	// Returns the current section
 	function getCurrentSection() {
 		const currentSectionPos = content.slick( "slickCurrentSlide" );
 		return sections.eq( currentSectionPos );
 	}
 
-    // Scrolls the page to the specified scroll target 
-    // and brings the selected section into view after
+	// Scrolls the page to the specified scroll target 
+	// and brings the selected section into view after
 	function goToTargetSection( linkPos ) {
 		$.smoothScroll( {
 			scrollTarget: scrollTarget, 
@@ -93,52 +93,52 @@ function navigationUtilitiesInit( args ) {
 		} );
 	}
 
-    // Marks clicked link and its other-navigation twin
-    // and unmarks the previously clicked links
+	// Marks clicked link and its other-navigation twin 
+	// and unmarks the previously clicked links
 	function markCurrentLinks( linkPos ) {
 		unmark( currentLinks );
 		currentLinks = getLinks( linkPos );
 		mark( currentLinks );
 	}
 
-    // Unmarks an array of links
+	// Unmarks an array of links
 	function unmark( links ) {
 		$( links ).each( function( pos, link ) {
 			unmarkLink( link ); 
 		} );
 	}
 
-    // Marks an array of links
+	// Marks an array of links
 	function mark( links ) {
 		$( links ).each( function( pos, link ) {
 			markLink( link );
 		} );
 	}
 
-    // Removes a style changing class from the specified link
+	// Removes a style changing class from the specified link
 	function unmarkLink( link ) {
 		$( link ).removeClass( linkCurrentClass ); 
 	}
 
-    // Gives the specified link a class to change its visual style
+	// Gives the specified link a class to change its visual style
 	function markLink( link ) {
 		$( link ).addClass( linkCurrentClass );
 	}
 
-    // Returns an array, containing links on a specified position
-    // in both the main and the floating navigations
+	// Returns an array, containing links on a specified position 
+	// in both the main and the floating navigations
 	function getLinks( linkPos ) {
 		return navigations.map( function( nav ) {
 			return getLinkIn( nav, linkPos ); 
 		} );
 	}
 
-    // Returns a link by its position
+	// Returns a link by its position
 	function getLinkIn( navigation, linkPos ) {
 		return navigation.find( ".link" ).eq( linkPos );
 	}
 
-    // Returns the position of a link among the links in a navigation
+	// Returns the position of a link among the links in a navigation
 	function getLinkPosIn( navigation, link ) {
 		return navigation.find( ".link" ).index( link ); 
 	}
