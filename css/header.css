@@ -32,6 +32,7 @@ header .position {
 	display: block; 
 	width: var( --photo-size ); height: var( --photo-size );
 	background-size: cover; 
+    background-color: var( --background-color ); 
 	border-radius: 50%; 
 	box-shadow: 0 0 var( --photo-box-shadow-size ) var( --photo-box-shadow-color );
 }
