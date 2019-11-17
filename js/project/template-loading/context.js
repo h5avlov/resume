@@ -8,7 +8,7 @@ const person = {
 	name: "Ico Pavlov", 
 	position: "Web Designer + Developer", 
 	photo: {
-		src: "abc2fdc6dfea08a7bff4359e48255a96.jpg"
+		src: "picture-not-available-300x300.png" 
 	}
 
 };
@@ -16,7 +16,7 @@ const person = {
 
 const summary = {
 	title: "Summary", 
-	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	text: "Hello, welcome to a page, I created with presenting my view of web design in mind. My name is Hristo and I am a freelance web designer, who enjoys creating designs and animations to stun the visitor, and likes writing code too. I have earned a BS degree in  Mechanical Engineering from TU - Sofia, like reading and watching Sci-Fi, have a good time talking about life, the universe and everything, so to say, believe that you are not really riding a bike unless you aren't heading uphill...", 
 	image: {
 		src: "summary.png"
 	}
@@ -25,7 +25,7 @@ const summary = {
 
 const education = {
 	title: "Education", 
-	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	text: "What you would find here is just a list of majors, not so impressive in any way. In fact, I have not graduated in my Information Technology MS, but I don't count it a failure as far as it served as an eye opener for me and introduced me to the amazing field of web development.", 
 	image: {
 		src: "education.png"
 	}, 
@@ -37,27 +37,26 @@ const education = {
 	}, 
 	
 	entries: [
-		{
-			major: "Master of Arts", 
-			educationalFacility: "Harvard University", 
-			year: "2016",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+        {
+			major: "MS in Information Technology", 
+			educationalFacility: "Technical University - Sofia", 
+			year: "2008",
+			description: ""
 		}, 
-		
-		{
-			major: "Bachelor of Arts", 
-			educationalFacility: "Harvard University", 
-			year: "2014",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+        
+        {
+			major: "BS in Mechanical Engineering", 
+			educationalFacility: "Technical University - Sofia", 
+			year: "2002",
+			description: ""
 		}, 
-		
-		{
-			major: "Communications And Design Specialist", 
-			educationalFacility: "Blue Mountain High School", 
-			year: "2010",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+        
+        {
+			major: "Professional in Robototechnics", 
+			educationalFacility: "TEA 'Kirov'", 
+			year: "1998",
+			description: ""
 		}
-		
 	]
 
 };
@@ -65,7 +64,7 @@ const education = {
 
 const workExperience = {
 	title: "Work Experience", 
-	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	text: "I am a freelance web designer and developer for a few years now and my previous jobs are not really relevant to my current work and sought after carrer development. So I didn't feel the need to give a mention of them.", 
 	image: {
 		src: "work-experience.png"
 	}, 
@@ -78,31 +77,10 @@ const workExperience = {
 	
 	entries: [
 		{
-			position: "UI/UX Design Lead", 
-			employerOrganization: "Rocket Designs", 
-			year: "2018",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
-		}, 
-		
-		{
-			position: "Junior UI/UX Designer", 
-			employerOrganization: "Rocket Designs", 
-			year: "2017",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
-		}, 
-		
-		{
-			position: "Digital Communications Associate", 
-			employerOrganization: "Weberest Digital Agency", 
-			year: "2017",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
-		}, 
-		
-		{
-			position: "Marketing Assistant", 
-			employerOrganization: "Blue Moon Lab", 
-			year: "2016",
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+			position: "Web Designer and Developer", 
+			employerOrganization: "Freelance", 
+			year: "2019",
+			description: ""
 		}
 	]
 
@@ -111,7 +89,7 @@ const workExperience = {
 
 const skills = {
 	title: "Skills", 
-	text: "Maecenas malesuada arcu vitae ornare viverra. Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis. Cras varius varius augue, tempor lobortis enim posuere eget. Sed et turpis ac eros blandit ultrices et ut lectus.", 
+	text: "I am trying to give my honest view of the matter at hand here, some rounding and bounding may occur, no doubt about it. All percentages are subjected to deviation but as soon as it came up, my very first jQuery plugin powers up the given percentage visual representation as a circle of trapezoid fragments below.", 
 	image: {
 		src: "skills.png"
 	}, 
@@ -130,36 +108,60 @@ const skills = {
 			
 			level: {
 				wordRepresentation: "Advanced", 
-				graphicRepresentation: "90%"
+				graphicRepresentation: "95%"
 			}, 
 			
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+			description: "As the means to define your page structure, I find HTML is very important and not to overlook. I try to write as semantic and structured HTML code as I could. And sometimes my HTML is a not as close to what you would think is the baseline - in my view, what everybody writes and calls 'semantic' is actually not semantic at all."
 		
 		}, 
-		
-		{
+        
+        {
 			skill: "CSS", 
 			
 			level: {
 				wordRepresentation: "Advanced", 
-				graphicRepresentation: "85%"
+				graphicRepresentation: "92%"
 			}, 
 			
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+			description: "Giving the page its color and shape, CSS is what makes it or breaks it. I am not a fan of frameworks like Bootstrap, that although often useful and easy for non dedicated coders, put demands for the underlying HTML to deviate from semantics. On the other hand, I like preprocessors and their aim to move the frontier of CSS in the right direction."
 		
 		}, 
-		
-		{
+        
+        {
 			skill: "JS", 
 			
 			level: {
-				wordRepresentation: "Intermediate", 
-				graphicRepresentation: "75%"
+				wordRepresentation: "Very Good", 
+				graphicRepresentation: "80%"
 			}, 
 			
-			description: "Nam ultrices turpis a mi fringilla convallis. Proin maximus libero sed urna sollicitudin ultricies. Vestibulum iaculis efficitur dolor sit amet tempus. Phasellus luctus, diam vitae ultrices faucibus, ante dolor vestibulum justo, ut suscipit tortor purus at felis."
+			description: "Although I hated JavaScript at first, because personally prefer strongly typed programming languages like Java and C#, it's a really nice language actually. I like the idea of TypeScript. I like AJAX for  making possible to make a nice animation to the new content the user demanding."
 		
-		}
+		}, 
+        
+        {
+			skill: "React", 
+			
+			level: {
+				wordRepresentation: "Fundamental", 
+				graphicRepresentation: "50%"
+			}, 
+			
+			description: "React is everything I missed a few years ago when I thought it's a clever idea to split a web page to separate parts each using its separate markup, styles and behaviour. On top of that React is not as complicated as someone would expect and the emergence of Gatsby makes me delighted."
+		
+		}, 
+        
+        {
+			skill: "WordPress", 
+			
+			level: {
+				wordRepresentation: "Fundamental", 
+				graphicRepresentation: "50%"
+			}, 
+			
+			description: "I find the idea to give a person the power to make a whole website in minutes, is great. Great websites always would need a proffessional touch so I don't think WordPress robs developers in some way. It's quite the opposite I think - only in the right hands WordPress would reveal its true power."
+		
+		} 
 	]
 
 };
@@ -171,19 +173,19 @@ const contact = {
 	entries: [
 		{
 			label: "Phone", 
-			value: "0888 123 456", 
+			value: "", 
 			className: "phone"
 		}, 
 		
 		{
 			label: "Email", 
-			value: "icopavlov@gmail.com", 
+			value: "xpavlov@abv.bg", 
 			className: "email"
 		}, 
 		
 		{
 			label: "Website", 
-			value: "icopavlov.com", 
+			value: "handcraftedwebdesign.online", 
 			className: "website"
 		}
 	]
