@@ -205,7 +205,12 @@
 	<h2 class= "section-title">{{title}}</h2>
 	{{#each entries}}
 		<dl class= "{{className}} key-value-pair">
-			<dt class= "key">{{label}}</dt><dd class= "value">{{value}}</dd>
+			<dt class= "key">{{label}}</dt>
+            {{#if webAddress}}
+            <dd class= "value"><a href= "https://{{value}}">{{value}}</a></dd>
+            {{else}}
+            <dd class= "value">{{value}}</dd>
+            {{/if}}
 		</dl>
 	{{/each}}
 </script>
