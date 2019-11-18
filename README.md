@@ -1,5 +1,3 @@
-"Create Your Resume" Task For Iris Technologies
-
 -----------------------------------------------
 Basic steps
 
