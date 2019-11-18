@@ -174,7 +174,7 @@ const contact = {
 		{
 			label: "Phone", 
 			value: "", 
-			className: "phone"
+			className: "phone" 
 		}, 
 		
 		{
@@ -186,7 +186,8 @@ const contact = {
 		{
 			label: "Website", 
 			value: "handcraftedwebdesign.online", 
-			className: "website"
+			className: "website", 
+            webAddress: true 
 		}
 	]
 
