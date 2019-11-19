@@ -36,6 +36,7 @@
 <main>
 	<section class= "summary section"></section>
 	<section class= "education section"></section>
+	<section class= "courses section"></section> 
 	<section class= "work-experience section"></section>
 	<section class= "skills section"></section>
 </main>
@@ -111,6 +112,40 @@
 				<section>
 					<dl class= "major secondary key-value-pair">
 						<dt class= "key">{{../labels.major}}</dt><dd class= "value">{{major}}</dd>
+					</dl>
+					
+					<dl class= "facility primary key-value-pair">
+						<dt class= "key">{{../labels.educationalFacility}}</dt><dd class= "value">{{educationalFacility}}</dd>
+					</dl>
+					
+					<dl class= "year key-value-pair">
+						<dt class= "key">{{../labels.year}}</dt><dd class= "value">{{year}}</dd>
+					</dl>
+				</section>
+				
+				<p class= "description-text">{{description}}</p>
+			</li>
+		{{/each}}
+	</ul>
+</script>
+
+
+<script id= "courses-template" type= "text/x-handlebars-template">
+	<article class= "overview">
+		<h2 class= "section-title">{{title}}</h2>
+		<p class= "text">{{text}}</p>
+	</article>
+	
+	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
+		<img src= "images/{{image.src}}" />
+	</figure>
+	
+	<ul class= "timeline entry-list">
+		{{#each entries}}
+			<li class= "entry">
+				<section>
+					<dl class= "major secondary key-value-pair">
+						<dt class= "key">{{../labels.course}}</dt><dd class= "value">{{course}}</dd>
 					</dl>
 					
 					<dl class= "facility primary key-value-pair">
