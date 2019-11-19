@@ -62,6 +62,38 @@ const education = {
 };
 
 
+const courses = {
+	title: "Courses", 
+	text: "A non-exhaustive list of the courses in programming I've taken at the Software University, that gave me a better understanding of the code part of web development. I signed up for the Data Structures and QA courses too, but was running short of time and didn't complete them.", 
+	image: {
+		src: "education.png"
+	}, 
+	
+	labels: {
+		course: "Course", 
+		educationalFacility: "Educational Facility",
+		year: "Year"
+	}, 
+	
+	entries: [
+        {
+			course: "C# Fundamentals", 
+			educationalFacility: "Software University", 
+			year: "2018",
+			description: ""
+		}, 
+
+		{
+			course: "Java OOP", 
+			educationalFacility: "Software University", 
+			year: "2018",
+			description: ""
+		} 
+	]
+
+};
+
+
 const workExperience = {
 	title: "Work Experience", 
 	text: "I am a freelance web designer and developer for a few years now and my previous jobs are not really relevant to my current work and sought after carrer development. So I didn't feel the need to give a mention of them.", 
@@ -89,7 +121,7 @@ const workExperience = {
 
 const skills = {
 	title: "Skills", 
-	text: "I am trying to give my honest view of the matter at hand here, some rounding and bounding may occur, no doubt about it. All percentages are subjected to deviation but as soon as it came up, my very first jQuery plugin powers up the given percentage visual representation as a circle of trapezoid fragments below.", 
+	text: "I am trying to give my honest view of the matter at hand here, some rounding and bounding may occur, no doubt about it. All percentages are subjected to deviation, and I am proud that my very first jQuery plugin powers up the given percentage visual representation as a circle of trapezoid fragments below.", 
 	image: {
 		src: "skills.png"
 	}, 
@@ -135,7 +167,7 @@ const skills = {
 				graphicRepresentation: "80%"
 			}, 
 			
-			description: "Although I hated JavaScript at first, because personally prefer strongly typed programming languages like Java and C#, it's a really nice language actually. I like the idea of TypeScript. I like AJAX for  making possible to make a nice animation to the new content the user demanding."
+			description: "Although I hated JavaScript at first, because personally prefer strongly typed programming languages like Java and C#, it's a really nice language actually. I like the idea of TypeScript. I like AJAX for making possible to give the user the new content they demand through a nice animation."
 		
 		}, 
         
@@ -208,6 +240,12 @@ const mainNavigation = {
 			text: education.title, 
 			targetSelector: ".education", 
 			className: "education-link"
+		}, 
+
+		{
+			text: courses.title, 
+			targetSelector: ".courses", 
+			className: "courses-link" 
 		}, 
 		
 		{

@@ -6,6 +6,7 @@ function renderTemplates() {
 	loadTemplate( "nav", "#nav-template", mainNavigation );
 	loadTemplate( ".summary", "#summary-template", summary );
 	loadTemplate( ".education", "#education-template", education );
+	loadTemplate( ".courses", "#courses-template", courses );
 	loadTemplate( ".work-experience", "#work-experience-template", workExperience );
 	loadTemplate( ".skills", "#skills-template", skills );
 	loadTemplate( ".contact", "#contact-template", contact );
