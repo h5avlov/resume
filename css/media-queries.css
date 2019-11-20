@@ -76,7 +76,7 @@
 	
 }
 
-@media screen and ( max-width: 400px ) {
+@media screen and ( max-width: 420px ) {
 	
 	.main-nav {
 		--main-nav-margin-bottom: 1.25rem; 
