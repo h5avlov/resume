@@ -66,7 +66,7 @@ const courses = {
 	title: "Courses", 
 	text: "A non-exhaustive list of the courses in programming I've taken at the Software University, that gave me a better understanding of the code part of web development. I signed up for the Data Structures and QA courses too, but was running short of time and didn't complete them.", 
 	image: {
-		src: "education.png"
+		src: "courses.png" 
 	}, 
 	
 	labels: {
