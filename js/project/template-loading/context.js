@@ -205,7 +205,7 @@ const contact = {
 	entries: [
 		{
 			label: "Phone", 
-			value: "", 
+			value: "0877 20 37 18", 
 			className: "phone" 
 		}, 
 		
