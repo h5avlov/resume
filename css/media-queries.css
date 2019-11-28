@@ -44,8 +44,9 @@
 		--overview-margin-bottom: 2.5rem; 
 	}
 	
-	.entry section, .skill-level {
-		display: flex; flex-direction: column;
+	.entry-list .entry, .section .entry-list:after, .entry .year, .entry .graphic-representation {
+		opacity: 1; 
+		animation: none; 
 	}
 	
 	.graphic-representation {
@@ -56,21 +57,30 @@
 	}
 	
 	.entry .year {
+		display: block; 
 		order: -1; 
 		width: auto; 
-		padding: 0.25rem; 
-		margin-right: auto; 
+		padding: 0;  
+		margin-right: 0; 
 		position: initial; 
-		border: 1px solid; 
 	}
 	
-	.entry-list .entry, .section .entry-list:after, .entry .year, .entry .graphic-representation {
-		opacity: 1; 
-		animation: none; 
-		
+	.entry .year, .secondary:before {
+		margin-bottom: var( --secondary-separator-margin-y ); 
 	}
 	
-	.background-image:after {
+	.entry .secondary { 
+		display: inline-block; 
+	}		
+	
+	.entry .secondary:before { 
+		display: block;
+		height: 1px; 
+		background-color: var( --text-color );
+		content: "";
+	}
+	
+	.skill-level .secondary:before { 
 		display: none; 
 	}
 	
