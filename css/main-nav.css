@@ -4,12 +4,12 @@
 
 .nav-links {
 	display: inline-block; 
+	margin-left: calc( -1 * var( --link-padding-x ) ); 
 }
 
 /* Making the navigation horizontal */
 .nav-links li {
 	float: left; 
-	margin-right: var( --nav-links-space-between );
 }
 
 .nav-links:after {
@@ -20,6 +20,8 @@
 
 .link {
 	display: block;
+	padding-left: var( --link-padding-x );
+	padding-right: var( --link-padding-x );
 	position: relative;
 }
 
