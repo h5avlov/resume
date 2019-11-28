@@ -66,6 +66,7 @@ header {
 .main-nav {
 	--main-nav-margin-bottom: 1.75rem; 
 	--nav-links-space-between: 0.75rem; 
+	--link-padding-x: calc( var( --nav-links-space-between ) / 2 );
 	--link-mark-margin-top: 0.85rem; 
 	--link-mark-height: 1px; 
 	--link-mark-shift: 2rem;
