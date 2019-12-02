@@ -87,7 +87,9 @@
 <script id= "summary-template" type= "text/x-handlebars-template">
 	<article class= "overview">
 		<h2 class= "section-title">{{title}}</h2>
-		<p class= "text">{{text}}</p>
+		{{#each text}}
+			<p class= "text-entry">{{this}}</p>
+		{{/each}}
 	</article>
 	
 	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
@@ -99,7 +101,7 @@
 <script id= "education-template" type= "text/x-handlebars-template">
 	<article class= "overview">
 		<h2 class= "section-title">{{title}}</h2>
-		<p class= "text">{{text}}</p>
+		<p class= "text-entry">{{text}}</p>
 	</article>
 	
 	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
@@ -133,7 +135,7 @@
 <script id= "courses-template" type= "text/x-handlebars-template">
 	<article class= "overview">
 		<h2 class= "section-title">{{title}}</h2>
-		<p class= "text">{{text}}</p>
+		<p class= "text-entry">{{text}}</p>
 	</article>
 	
 	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
@@ -167,7 +169,7 @@
 <script id= "work-experience-template" type= "text/x-handlebars-template">
 	<article class= "overview">
 		<h2 class= "section-title">{{title}}</h2>
-		<p class= "text">{{text}}</p>
+		<p class= "text-entry">{{text}}</p>
 	</article>
 	
 	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
@@ -201,7 +203,7 @@
 <script id= "skills-template" type= "text/x-handlebars-template">
 	<article class= "overview">
 		<h2 class= "section-title">{{title}}</h2>
-		<p class= "text">{{text}}</p>
+		<p class= "text-entry">{{text}}</p>
 	</article>
 	
 	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
