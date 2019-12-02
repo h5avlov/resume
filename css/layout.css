@@ -77,6 +77,15 @@ main {
 	
 }
 
+.text-entry {
+	margin-bottom: var( --text-entry-margin-bottom ); 
+	
+}
+
+.text-entry:last-of-type {
+	
+}
+
 
 /* Backgrounds general settings */
 
