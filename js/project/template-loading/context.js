@@ -15,8 +15,10 @@ const person = {
 
 
 const summary = {
-	title: "Summary", 
-	text: "Hello, welcome to a page, I created with presenting my view of web design in mind. My name is Hristo and I am a freelance web designer, who enjoys creating designs and animations to stun the visitor, and likes writing code too. I have earned a BS degree in  Mechanical Engineering from TU - Sofia, like reading and watching Sci-Fi, have a good time talking about life, the universe and everything, so to say, believe that you are not really riding a bike unless you aren't heading uphill...", 
+	title: "Welcome", 
+	text: [ 
+		"Hello, welcome to a page, I designed and coded to give some info about me and to share my view of how web design could look. My name is Hristo and I am a freelance web designer, devoted not only to creating designs and animations, aimed to stun the visitor, but to writing clean and organized code too. I like Sci-Fi, Japanese anime, talking about life, the universe and everything, combat and power sports and, as a bike rider, believe that you are not really riding, unless you are not heading uphill." 
+	], 
 	image: {
 		src: "summary.png"
 	}
