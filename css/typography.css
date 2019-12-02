@@ -33,7 +33,7 @@ body {
 	color: var( --text-color ); 
 }
 
-.text, .description-text {
+.text-entry, .description-text {
 	line-height: var( --body-text-line-height );
 }
 
