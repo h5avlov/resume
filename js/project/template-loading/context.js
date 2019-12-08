@@ -219,7 +219,7 @@ const contact = {
 		
 		{
 			label: "Website", 
-			value: "handcraftedwebdesign.online", 
+			value: "icopavlov.github.io", 
 			className: "website", 
             webAddress: true 
 		}
