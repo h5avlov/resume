@@ -27,7 +27,7 @@ const summary = {
 
 const education = {
 	title: "Education", 
-	text: "What you would find here is just a list of majors, not so impressive in any way. In fact, I have not graduated in my Information Technology MS, but I don't count it a failure as far as it served as an eye opener for me and introduced me to the amazing field of web development.", 
+	text: "What you will find here is just a list of majors, not so impressive in any way. In fact, I have not graduated in my Information Technology MS, but I don't count it a failure as far as it served as an eye opener for me and introduced me to the amazing field of web development.", 
 	image: {
 		src: "education.png"
 	}, 
@@ -98,7 +98,7 @@ const courses = {
 
 const workExperience = {
 	title: "Work Experience", 
-	text: "I am a freelance web designer and developer for a few years now and my previous jobs are not really relevant to my current work and sought after carrer development. So I didn't feel the need to give a mention of them.", 
+	text: "I am a freelance web designer and developer for a few years now and my previous jobs are not really relevant to my current work and sought after career development. So I didn't feel the need to give a mention of them.", 
 	image: {
 		src: "work-experience.png"
 	}, 
@@ -123,7 +123,7 @@ const workExperience = {
 
 const skills = {
 	title: "Skills", 
-	text: "I am trying to give my honest view of the matter at hand here, some rounding and bounding may occur, no doubt about it. All percentages are subjected to deviation, and I am proud that my very first jQuery plugin powers up the given percentage visual representation as a circle of trapezoid fragments below.", 
+	text: "All percentages are subjected to deviation, and I am proud that my very first jQuery plugin powers up the given percentage visual representation as a circle of trapezoid fragments below.", 
 	image: {
 		src: "skills.png"
 	}, 
@@ -145,7 +145,7 @@ const skills = {
 				graphicRepresentation: "95%"
 			}, 
 			
-			description: "As the means to define your page structure, I find HTML is very important and not to overlook. I try to write as semantic and structured HTML code as I could. And sometimes my HTML is a not as close to what you would think is the baseline - in my view, what everybody writes and calls 'semantic' is actually not semantic at all."
+			description: "As the means to define your page structure, I find HTML is very important and not to overlook. I try to write as semantic and structured HTML code, as I could. And sometimes my HTML is a not as close to what you would think is the baseline - in my view, what everybody writes and calls 'semantic' often is actually not semantic at all."
 		
 		}, 
         
@@ -169,7 +169,7 @@ const skills = {
 				graphicRepresentation: "80%"
 			}, 
 			
-			description: "Although I hated JavaScript at first, because personally prefer strongly typed programming languages like Java and C#, it's a really nice language actually. I like the idea of TypeScript. I like AJAX for making possible to give the user the new content they demand through a nice animation."
+			description: "Although I hated JavaScript at first, because personally prefer strongly typed programming languages, like Java and C#, it's a really nice programming language actually with its ease of use. I still like TypeScript more, but JavaScript moves forward quickly enough. From the point of view of an UI/UX designer AJAX is vital, making possible to display the new content in a more intuitive, smooth and even animated way."
 		
 		}, 
         
@@ -181,7 +181,7 @@ const skills = {
 				graphicRepresentation: "50%"
 			}, 
 			
-			description: "React is everything I missed a few years ago when I thought it's a clever idea to split a web page to separate parts each using its separate markup, styles and behaviour. On top of that React is not as complicated as someone would expect and the emergence of Gatsby makes me delighted."
+			description: "React is everything I missed a few years ago, when I thought it's a nice idea to split a web page to separate parts, each using its separate markup, styles and behaviour. That way, to construct a page, all one would have to do was just combine a finite number of such parts, making small tweaks in markup, styles or behaviour. I find the possibility to use React mainly as a templating engine to generate static site with Gatsby is really awesome."
 		
 		}, 
         
