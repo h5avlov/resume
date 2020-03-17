@@ -213,7 +213,7 @@ const contact = {
 		
 		{
 			label: "Email", 
-			value: "xpavlov@abv.bg", 
+			value: "h5avlov@abv.bg", 
 			className: "email"
 		}, 
 		
