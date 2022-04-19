@@ -59,7 +59,7 @@ body > * {
 }
 
 .intro {
-	height: auto; 
+	/*height: auto; */ 
 	opacity: 1; 
 	animation: none; 
 	z-index: 10; 

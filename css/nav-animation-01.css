@@ -39,7 +39,7 @@ footer {
 
 /* Floating navigation stretches over the whole screen when on */
 .floating-nav.nav-open {
-	height: 100%; overflow: visible; 
+	height: 100%; 
 }
 
 
