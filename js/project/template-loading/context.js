@@ -114,7 +114,7 @@ const workExperience = {
 			position: "Web Designer and Developer", 
 			employerOrganization: "Freelance", 
 			year: "2019",
-			description: ""
+			description: "" 
 		}
 	]
 
@@ -207,7 +207,7 @@ const contact = {
 	entries: [
 		{
 			label: "Phone", 
-			value: "", 
+			value: "0877203718", 
 			className: "phone" 
 		}, 
 		
