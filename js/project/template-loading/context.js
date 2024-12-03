@@ -118,7 +118,40 @@ const workExperience = {
 		}
 	]
 
-};
+}; 
+
+const work = {
+	title: "Work", 
+	text: "Sharing with you some projects to try to shine with :)", 
+	image: {
+		src: ""
+	}, 
+
+	labels: {
+		number: "Number" 
+	}, 
+	
+	entries: [
+		{
+			number: 1, 
+			title: "Doshky", 
+			address: "https://doshky.github.io/doshky.com/" 
+		}, 
+
+		{ 
+			number: 2, 
+			title: "Ellibeetherapy", 
+			address: "https://ellibeetherapy.com/" 
+		}, 
+
+		{ 
+			number: 3, 
+			title: "Za Vakarel", 
+			address: "https://zavakarel.github.io/mir/" 
+		}
+	]
+
+}; 
 
 
 const skills = {
@@ -213,16 +246,9 @@ const contact = {
 		
 		{
 			label: "Email", 
-			value: "xpavlov@abv.bg", 
+			value: "h5avlov@abv.bg", 
 			className: "email"
-		}, 
-		
-		{
-			label: "Website", 
-			value: "icopavlov.github.io", 
-			className: "website", 
-            webAddress: true 
-		}
+		} 
 	]
 
 };
@@ -254,6 +280,12 @@ const mainNavigation = {
 			text: workExperience.title, 
 			targetSelector: ".work-experience", 
 			className: "work-experience-link"
+		}, 
+
+		{
+			text: work.title, 
+			targetSelector: ".work", 
+			className: "work-link"
 		}, 
 		
 		{

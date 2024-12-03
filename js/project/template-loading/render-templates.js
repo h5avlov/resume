@@ -7,7 +7,8 @@ function renderTemplates() {
 	loadTemplate( ".summary", "#summary-template", summary );
 	loadTemplate( ".education", "#education-template", education );
 	loadTemplate( ".courses", "#courses-template", courses );
-	loadTemplate( ".work-experience", "#work-experience-template", workExperience );
+	loadTemplate( ".work-experience", "#work-experience-template", workExperience ); 
+	loadTemplate( ".work", "#work-template", work ); 
 	loadTemplate( ".skills", "#skills-template", skills );
 	loadTemplate( ".contact", "#contact-template", contact );
 	

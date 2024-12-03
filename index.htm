@@ -48,6 +48,7 @@
 	<section class= "education section"></section>
 	<section class= "courses section"></section> 
 	<section class= "work-experience section"></section>
+	<section class= "work section"></section>
 	<section class= "skills section"></section>
 </main>
 <footer>
@@ -202,15 +203,33 @@
 						<dt class= "key">{{../labels.employerOrganization}}</dt><dd class= "value">{{employerOrganization}}</dd>
 					</dl>
 				</section> 
-
-				<div> 
-					<span>Some Projects: </span> 
-					<a href="https://doshky.github.io/doshky.com/">Doshky</a> | 
-					<a href=" https://zavakarel.github.io/mir/">Za Vakarel</a> | 
-					<a href="https://ellibeetherapy.com/">Ellibeetherapy</a>
-				</div>
 				
 				<p class= "description-text">{{description}}</p>
+			</li>
+		{{/each}}
+	</ul>
+</script> 
+
+
+<script id= "work-template" type= "text/x-handlebars-template">
+	<article class= "overview">
+		<h2 class= "section-title">{{title}}</h2>
+		<p class= "text-entry">{{text}}</p>
+	</article>
+	
+	<figure class= "background-image" style= "background-image: url( images/{{image.src}} )">
+		<img src= "images/{{image.src}}" />
+	</figure>
+	
+	<ul class= "timeline entry-list">
+		{{#each entries}}
+			<li class= "entry">
+				<dl class= "year key-value-pair">
+					<dt class= "key">Order</dt><dd class= "value">{{number}}</dd>
+				</dl>
+
+				<a href="{{address}}">{{title}}</a> 
+				
 			</li>
 		{{/each}}
 	</ul>
