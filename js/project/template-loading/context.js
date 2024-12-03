@@ -122,7 +122,7 @@ const workExperience = {
 
 const work = {
 	title: "Work", 
-	text: "Sharing with you some projects to try to shine with :)", 
+	text: "Sharing some projects to try to shine with :)", 
 	image: {
 		src: ""
 	}, 
